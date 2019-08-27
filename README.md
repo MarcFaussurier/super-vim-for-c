@@ -20,7 +20,7 @@ somehow destroy my installation.
 - Your NEOVIM will use your VIM (everything you need for C one again)
 
 - ThinkVIM will install on NVIM, also 
-autocompletion features are removed in favor of TheVimIDE ThinkVIM is mostly 
+autocompletion features are removed in favor of TheVimIDE. ThinkVIM is mostly 
 here for NVIM colors both in files and terminal.
 
 - *I SUGGEST YOU TO INSTALL VimR FOR AWESOME EXPERIENCE* 
@@ -32,4 +32,6 @@ http://vimr.org
 [ThinkVIM] 
 
 - Awesome C completion in VIM and NVIM [TheVimIDE]
+
+- F1 to header [vim-42header]
 
