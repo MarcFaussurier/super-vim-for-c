@@ -1,5 +1,3 @@
-## mfaussur super vim for C!
-
 # This is a merge/fork of 3 repos
 
 This is a merge of TheVimIDE (https://github.com/Shadowsith/TheVimIDE),
