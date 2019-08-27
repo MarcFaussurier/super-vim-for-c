@@ -6,6 +6,10 @@ This is a merge of TheVimIDE (https://github.com/Shadowsith/TheVimIDE),
 ThinkVIM (https://github.com/hardcoreplayers/ThinkVim), and Vim-42Header
 (https://github.com/pbondoer/vim-42header).
 
+
+![C Editing](https://github.com/MarcFaussurier/super-vim-for-c/blob/master/Screen%20Shot%202019-08-27%20at%2011.50.48.png)
+
+![MD Editing](https://github.com/MarcFaussurier/super-vim-for-c/blob/master/Screen%20Shot%202019-08-27%20at%2011.51.09.png)
 -----
 
 # Introduction
