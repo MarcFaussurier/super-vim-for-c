@@ -1,0 +1,1603 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+$DATA_PATH	core/vimrc	/^let $DATA_PATH = g:etc#cache_path$/;"	v
+$FZF_DEFAULT_COMMAND	core/plugins/fzf.vim	/^  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git\/*"'$/;"	v
+$FZF_DEFAULT_OPTS	core/plugins/fzf.vim	/^let $FZF_DEFAULT_OPTS='--layout=reverse'$/;"	v
+$VIM_PATH	core/vimrc	/^let $VIM_PATH = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')$/;"	v
+&	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr><nowait> &  defx#do_action('cd', getcwd())$/;"	m
+'	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> '      defx#do_action('toggle_select') . 'j'$/;"	m
+*	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> *      defx#do_action('toggle_select_all')$/;"	m
+,	core/plugins/allkey.vim	/^    inoremap <expr> , smartchr#one_of(',', ',')$/;"	m
+,	core/vimrc	/^	nnoremap ,        <Nop>$/;"	m
+,	core/vimrc	/^	xnoremap ,        <Nop>$/;"	m
+,<Space>	core/mappings.vim	/^nnoremap <silent> ,<Space> :<C-u>silent! keeppatterns %substitute\/\\s\\+$\/\/e<CR>$/;"	m
+-	core/plugins/allkey.vim	/^	nmap -         <Plug>(choosewin)$/;"	m
+.	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> .     defx#do_action('toggle_ignored_files')$/;"	m
+;	core/vimrc	/^	nnoremap ;        <Nop>$/;"	m
+;	core/vimrc	/^	xnoremap ;        <Nop>$/;"	m
+<C-O>	core/mappings.vim	/^inoremap <C-O> <Esc>o$/;"	m
+<C-Q>	core/mappings.vim	/^imap <C-Q> <esc>:wq<CR>$/;"	m
+<C-S>	core/mappings.vim	/^imap <C-S> <esc>:w<CR>$/;"	m
+<C-a>	core/mappings.vim	/^cnoremap <C-a> <Home>$/;"	m
+<C-a>	core/mappings.vim	/^inoremap <C-a> <Home>$/;"	m
+<C-b>	core/mappings.vim	/^cnoremap <C-b> <Left>$/;"	m
+<C-b>	core/mappings.vim	/^inoremap <C-b> <Left>$/;"	m
+<C-b>	core/mappings.vim	/^noremap <expr> <C-b> max([winheight(0) - 2, 1])$/;"	m
+<C-b>	core/plugins/allkey.vim	/^		nnoremap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "\\<C-b>"$/;"	m
+<C-b>	core/plugins/allkey.vim	/^    nnoremap <silent> <C-b> :call comfortable_motion#flick(g:comfortable_motion_impulse_multipli/;"	m
+<C-c>	core/plugins/allkey.vim	/^        nmap <silent> <C-c> <Plug>(coc-cursors-position)$/;"	m
+<C-d>	core/mappings.vim	/^cnoremap <C-d> <Del>$/;"	m
+<C-d>	core/mappings.vim	/^inoremap <C-d> <Del>$/;"	m
+<C-d>	core/plugins/allkey.vim	/^    nnoremap <silent> <C-d> :call comfortable_motion#flick(g:comfortable_motion_impulse_multipli/;"	m
+<C-e>	core/mappings.vim	/^cnoremap <C-e> <End>$/;"	m
+<C-e>	core/mappings.vim	/^inoremap <expr><C-e> pumvisible() ? "\\<C-e>" : "\\<End>"$/;"	m
+<C-e>	core/mappings.vim	/^noremap <expr> <C-e> (line("w$") >= line('$') ? "j" : "3\\<C-e>")$/;"	m
+<C-f>	core/mappings.vim	/^cnoremap <C-f> <Right>$/;"	m
+<C-f>	core/mappings.vim	/^inoremap <C-f> <Right>$/;"	m
+<C-f>	core/mappings.vim	/^noremap <expr> <C-f> max([winheight(0) - 2, 1])$/;"	m
+<C-f>	core/plugins/allkey.vim	/^		nnoremap <expr><C-f> coc#util#has_float() ? coc#util#float_scroll(1) : "\\<C-f>"$/;"	m
+<C-f>	core/plugins/allkey.vim	/^    nnoremap <silent> <C-f> :call comfortable_motion#flick(g:comfortable_motion_impulse_multipli/;"	m
+<C-g>	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> <C-g>  defx#do_action('print')$/;"	m
+<C-h>	core/mappings.vim	/^cnoremap <C-h> <BS>$/;"	m
+<C-h>	core/mappings.vim	/^inoremap <C-h> <BS>$/;"	m
+<C-h>	core/mappings.vim	/^nnoremap <C-h> <C-w>h$/;"	m
+<C-j>	core/mappings.vim	/^nnoremap <C-j> <C-w>j$/;"	m
+<C-k>	core/mappings.vim	/^inoremap <C-k>  <ESC>d$a$/;"	m
+<C-k>	core/mappings.vim	/^nnoremap <C-k> <C-w>k$/;"	m
+<C-l>	core/mappings.vim	/^nnoremap <C-l> <C-w>l$/;"	m
+<C-m>	core/plugins/allkey.vim	/^        nmap <silent> <C-m> <Plug>(coc-cursors-word)$/;"	m
+<C-m>	core/plugins/allkey.vim	/^        xmap <silent> <C-m> <Plug>(coc-cursors-range)$/;"	m
+<C-p>	core/mappings.vim	/^cnoremap <C-p> <Up>$/;"	m
+<C-r>	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> <C-r>  defx#do_action('redraw')$/;"	m
+<C-t>	core/mappings.vim	/^cnoremap <C-t> <C-R>=expand("%:p:h") . "\/" <CR>$/;"	m
+<C-u>	core/mappings.vim	/^inoremap <C-u> <C-G>u<C-U>$/;"	m
+<C-u>	core/plugins/allkey.vim	/^    nnoremap <silent> <C-u> :call comfortable_motion#flick(g:comfortable_motion_impulse_multipli/;"	m
+<C-w>	core/mappings.vim	/^inoremap <C-w> <C-[>diwa$/;"	m
+<C-w>[	core/mappings.vim	/^nmap <C-w>[ :vertical resize -3<CR>$/;"	m
+<C-w>]	core/mappings.vim	/^nmap <C-w>] :vertical resize +3<CR>$/;"	m
+<C-x>	core/mappings.vim	/^nnoremap <C-x>  :bd<CR>$/;"	m
+<C-y>	core/mappings.vim	/^noremap <expr> <C-y> (line("w0") <= 1         ? "k" : "3\\<C-y>")$/;"	m
+<CR>	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> <CR>  defx#do_action('drop')$/;"	m
+<F10>	core/color.vim	/^map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'$/;"	m
+<Leader>-	core/plugins/allkey.vim	/^	nmap <Leader>- :<C-u>ChooseWinSwapStay<CR>$/;"	m
+<Leader><Leader>b	core/plugins/allkey.vim	/^	    nmap <Leader><Leader>b <Plug>(easymotion-b)$/;"	m
+<Leader><Leader>f	core/plugins/allkey.vim	/^	    nmap <Leader><Leader>f <Plug>(easymotion-f)$/;"	m
+<Leader><Leader>w	core/plugins/allkey.vim	/^        nmap <Leader><Leader>w <Plug>(easymotion-w)$/;"	m
+<Leader>F	core/plugins/allkey.vim	/^         nnoremap <silent> <Leader>F$/;"	m
+<Leader>G	core/plugins/allkey.vim	/^	nnoremap <Leader>G :Goyo<CR>$/;"	m
+<Leader>bo	core/mappings.vim	/^nnoremap <Leader>bo :BufOnly $/;"	m
+<Leader>e	core/plugins/allkey.vim	/^        nnoremap <silent> <Leader>e$/;"	m
+<Leader>gB	core/plugins/allkey.vim	/^	nnoremap <silent> <Leader>gB :Gbrowse<CR>$/;"	m
+<Leader>gS	core/plugins/allkey.vim	/^	nnoremap <silent> <Leader>gS :Gstatus<CR>$/;"	m
+<Leader>gb	core/plugins/allkey.vim	/^	nnoremap <silent> <Leader>gb :Gblame<CR>$/;"	m
+<Leader>gc	core/plugins/allkey.vim	/^	nnoremap <silent> <Leader>gc :Gcommit<CR>$/;"	m
+<Leader>gd	core/plugins/allkey.vim	/^	nnoremap <silent> <Leader>gd :Gdiff<CR>$/;"	m
+<Leader>gh	core/plugins/allkey.vim	/^	    nnoremap <silent> <Leader>gh :<C-u>Denite gitbranch<CR>$/;"	m
+<Leader>gl	core/plugins/allkey.vim	/^        nnoremap <silent> <Leader>gl :<C-u>Denite gitlog:all<CR>$/;"	m
+<Leader>gp	core/plugins/allkey.vim	/^	nnoremap <silent><Leader>gp :Gina push<CR>$/;"	m
+<Leader>w	core/mappings.vim	/^noremap <Leader>w :w<CR>$/;"	m
+<LocalLeader>gC	core/plugins/allkey.vim	/^	 nnoremap <silent> <LocalLeader>gC :GoCallers<CR>$/;"	m
+<LocalLeader>gc	core/plugins/allkey.vim	/^	 nnoremap <silent> <LocalLeader>gc :GoCallees<CR>$/;"	m
+<LocalLeader>gd	core/plugins/allkey.vim	/^	 nnoremap <silent> <LocalLeader>gd :GoDescribe<CR>$/;"	m
+<LocalLeader>gi	core/plugins/allkey.vim	/^	 nnoremap <silent> <LocalLeader>gi :GoImpl<CR>$/;"	m
+<LocalLeader>gs	core/plugins/allkey.vim	/^	 nnoremap <silent> <LocalLeader>gs :GoCallstack<CR>$/;"	m
+<LocalLeader>m	core/plugins/allkey.vim	/^        nnoremap <silent><LocalLeader>m :<C-u>Denite menu<CR>$/;"	m
+<LocalLeader>s	core/plugins/allkey.vim	/^    nmap <silent> <LocalLeader>s :call ActionMenuCodeActions()<CR>$/;"	m
+<Plug>(StopHL)	plugin/hlsearch.vim	/^		noremap  <expr> <Plug>(StopHL) execute('nohlsearch')[-1]$/;"	m
+<Plug>(StopHL)	plugin/hlsearch.vim	/^		noremap! <expr> <Plug>(StopHL) execute('nohlsearch')[-1]$/;"	m
+<Space>	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr><nowait> <Space>$/;"	m
+<Space>	core/vimrc	/^	nnoremap <Space>  <Nop>$/;"	m
+<Space>	core/vimrc	/^	xnoremap <Space>  <Nop>$/;"	m
+<Tab>	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> <Tab> winnr('$') != 1 ?$/;"	m
+<c-space>	core/plugins/allkey.vim	/^        inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<div align="center"> [ThinkVim](https://github.com/taigacute/ThinkVim)</div>	README-CN.md	/^## <div align="center"> [ThinkVim](https:\/\/github.com\/taigacute\/ThinkVim)<\/div>$/;"	s
+<div align="center"> [ThinkVim](https://github.com/taigacute/ThinkVim)</div>	README.md	/^## <div align="center"> [ThinkVim](https:\/\/github.com\/taigacute\/ThinkVim)<\/div>$/;"	s
+<leader>	core/plugins/allkey.vim	/^		nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>$/;"	m
+<leader>0	core/mappings.vim	/^nmap <leader>0 <Plug>BuffetSwitch(10)$/;"	m
+<leader>1	core/mappings.vim	/^nmap <leader>1 <Plug>BuffetSwitch(1)$/;"	m
+<leader>2	core/mappings.vim	/^nmap <leader>2 <Plug>BuffetSwitch(2)$/;"	m
+<leader>3	core/mappings.vim	/^nmap <leader>3 <Plug>BuffetSwitch(3)$/;"	m
+<leader>4	core/mappings.vim	/^nmap <leader>4 <Plug>BuffetSwitch(4)$/;"	m
+<leader>5	core/mappings.vim	/^nmap <leader>5 <Plug>BuffetSwitch(5)$/;"	m
+<leader>6	core/mappings.vim	/^nmap <leader>6 <Plug>BuffetSwitch(6)$/;"	m
+<leader>7	core/mappings.vim	/^nmap <leader>7 <Plug>BuffetSwitch(7)$/;"	m
+<leader>8	core/mappings.vim	/^nmap <leader>8 <Plug>BuffetSwitch(8)$/;"	m
+<leader>9	core/mappings.vim	/^nmap <leader>9 <Plug>BuffetSwitch(9)$/;"	m
+<leader>ac	core/plugins/allkey.vim	/^        nmap <leader>ac  <Plug>(coc-codeaction)$/;"	m
+<leader>bc	core/mappings.vim	/^nnoremap <leader>bc :BufOnly<CR>$/;"	m
+<leader>ca	core/plugins/allkey.vim	/^        nmap <leader>ca  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>ca	core/plugins/allkey.vim	/^        xmap <leader>ca  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>cc	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>cc  :<C-u>CocList commands<cr>$/;"	m
+<leader>cd	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>cd  :<C-u>CocList diagnostics<cr>$/;"	m
+<leader>ce	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>ce  :<C-u>CocList extensions<cr>$/;"	m
+<leader>cf	core/plugins/allkey.vim	/^        nmap <leader>cf  <Plug>(coc-format-selected)$/;"	m
+<leader>cf	core/plugins/allkey.vim	/^        vmap <leader>cf  <Plug>(coc-format-selected)$/;"	m
+<leader>cg	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>cg  :<C-u>CocList --normal gstatus<CR>$/;"	m
+<leader>cj	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>cj  :<C-u>CocNext<CR>$/;"	m
+<leader>ck	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>ck  :<C-u>CocPrev<CR>$/;"	m
+<leader>cm	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>cm ::CocSearch -w $/;"	m
+<leader>cn	core/plugins/allkey.vim	/^        nmap <leader>cn <Plug>(coc-rename)$/;"	m
+<leader>co	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>co  :<C-u>CocList outline<cr>$/;"	m
+<leader>cr	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>cr  :<C-u>CocListResume<CR>$/;"	m
+<leader>cs	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>cs  :<C-u>CocList -I symbols<cr>$/;"	m
+<leader>d	core/plugins/allkey.vim	/^        nnoremap <silent><leader>d :Dash<CR>$/;"	m
+<leader>fb	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>fb :Buffers<CR>$/;"	m
+<leader>fc	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>fc :Colors<CR>$/;"	m
+<leader>ff	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>ff :call Fzf_dev()<CR>$/;"	m
+<leader>fr	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>fr :Rg<CR>$/;"	m
+<leader>fv	core/plugins/allkey.vim	/^        nnoremap <silent><leader>fv     :Vista finder coc<CR>$/;"	m
+<leader>fw	core/plugins/allkey.vim	/^        nnoremap <silent> <leader>fw :Rg <C-R><C-W><CR>$/;"	m
+<leader>m	core/plugins/allkey.vim	/^    nnoremap <silent> <leader>m :MundoToggle<CR>$/;"	m
+<leader>p	core/mappings.vim	/^nnoremap <leader>p :EditPluginSetting <Space>$/;"	m
+<leader>qf	core/plugins/allkey.vim	/^        nmap <leader>qf  <Plug>(coc-fix-current)$/;"	m
+<leader>s	core/plugins/allkey.vim	/^    nnoremap <silent> <leader>s :Startify<CR>$/;"	m
+<leader>te	core/mappings.vim	/^noremap <leader>te :tabedit$/;"	m
+<leader>tm	core/mappings.vim	/^noremap <leader>tm :tabmove$/;"	m
+<leader>tn	core/mappings.vim	/^noremap <leader>tn :tabnew<cr>$/;"	m
+<leader>x	core/plugins/allkey.vim	/^        nmap <leader>x  <Plug>(coc-cursors-operator)$/;"	m
+<localleader>	core/plugins/allkey.vim	/^		nnoremap <silent> <localleader> :<c-u>WhichKey  ';'<CR>$/;"	m
+<localleader>r	core/plugins/allkey.vim	/^    nnoremap <silent> <localleader>r :QuickRun<CR>$/;"	m
+<localleader>t	core/plugins/allkey.vim	/^        nnoremap <silent><localleader>t :TagbarToggle<CR>$/;"	m
+<localleader>v	core/plugins/allkey.vim	/^        nnoremap <silent><localleader>v :Vista!!<CR>$/;"	m
+A	core/plugins/allkey.vim	/^	xmap A  <Plug>(niceblock-A)$/;"	m
+ActionMenuCodeActions	core/plugins/allkey.vim	/^func! ActionMenuCodeActions() abort$/;"	f
+ActionMenuCodeActionsCallback	core/plugins/allkey.vim	/^func! ActionMenuCodeActionsCallback(index, item) abort$/;"	f
+BOnly	plugin/bufonly.vim	/^command! -nargs=? -complete=buffer -bang BOnly$/;"	c
+Backers	README-CN.md	/^## Backers$/;"	s
+Backers	README.md	/^## Backers$/;"	s
+Bonly	plugin/bufonly.vim	/^command! -nargs=? -complete=buffer -bang Bonly$/;"	c
+BufOnly	plugin/bufonly.vim	/^command! -nargs=? -complete=buffer -bang BufOnly$/;"	c
+BufOnly	plugin/bufonly.vim	/^function! BufOnly(buffer, bang)$/;"	f
+BuffetSetCustomColors	core/plugins/buffet.vim	/^function! g:BuffetSetCustomColors()$/;"	f
+Bufonly	plugin/bufonly.vim	/^command! -nargs=? -complete=buffer -bang Bufonly$/;"	c
+C	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> C$/;"	m
+Coc Extensions	tutorial/tutorial.md	/^### Coc Extensions$/;"	S
+CocExtensions	README-CN.md	/^## CocExtensions$/;"	s
+Commic Custom	README.md	/^## Commic Custom$/;"	s
+DiffOrig	plugin/difftools.vim	/^command! -nargs=0 DiffOrig call s:open_diff()$/;"	c
+Donation	README-CN.md	/^## Donation$/;"	s
+Environment Information	.github/ISSUE_TEMPLATE/bug_report.md	/^## Environment Information$/;"	s
+Feature	README.md	/^## Feature$/;"	s
+Feedback	README-CN.md	/^## Feedback$/;"	s
+Find	core/plugins/fzf.vim	/^  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed/;"	c
+FloatingFZF	core/plugins/fzf.vim	/^function! FloatingFZF()$/;"	f
+FoldText	plugin/nicefold.vim	/^function! FoldText()$/;"	f
+Fzf_dev	core/plugins/fzf.vim	/^function! Fzf_dev()$/;"	f
+GruvboxHlsHideCursor	colors/gruvbox.vim	/^function! GruvboxHlsHideCursor()$/;"	f
+GruvboxHlsShowCursor	colors/gruvbox.vim	/^function! GruvboxHlsShowCursor()$/;"	f
+How to Install plugins?	tutorial/tutorial.md	/^## How to Install plugins?$/;"	s
+How to config completion	tutorial/tutorial.md	/^## How to config completion$/;"	s
+How to install or change colorscheme	tutorial/tutorial.md	/^## How to install or change colorscheme$/;"	s
+How to reproduce the problem from neovim startup (Required!)	.github/ISSUE_TEMPLATE/bug_report.md	/^## How to reproduce the problem from neovim startup (Required!)$/;"	s
+How to set the Startify	tutorial/tutorial.md	/^## How to set the Startify$/;"	s
+How to use the spaceline	tutorial/tutorial.md	/^## How to use the spaceline$/;"	s
+I	core/plugins/allkey.vim	/^	xmap I  <Plug>(niceblock-I)$/;"	m
+InitCaw	core/plugins/allkey.vim	/^    function! InitCaw() abort$/;"	f
+Install	README.md	/^## Install$/;"	s
+K	core/plugins/allkey.vim	/^        nnoremap <silent> K :call <sid>show_documentation()<cr>$/;"	m
+K	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> K     defx#do_action('new_directory')$/;"	m
+KeyMap	tutorial/tutorial.md	/^## KeyMap$/;"	s
+MyAutoCmd	autoload/theme.vim	/^augroup MyAutoCmd$/;"	a
+MyAutoCmd	core/filetype.vim	/^augroup MyAutoCmd$/;"	a
+MyAutoCmd	core/general.vim	/^augroup MyAutoCmd$/;"	a
+MyAutoCmd	core/plugins/allkey.vim	/^    augroup MyAutoCmd$/;"	a
+MyAutoCmd	core/vimrc	/^augroup MyAutoCmd$/;"	a
+N	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> N     defx#do_action('new_multiple_files')$/;"	m
+P	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> P     defx#do_action('open', 'pedit')$/;"	m
+PaperColor	colors/PaperColor.vim	/^command! -nargs=0 PaperColor :call g:PaperColor()$/;"	c
+PaperColor	colors/PaperColor.vim	/^fun! g:PaperColor()$/;"	f
+PluginsDetail	README.md	/^## PluginsDetail$/;"	s
+Problems summary	.github/ISSUE_TEMPLATE/bug_report.md	/^# Problems summary$/;"	c
+Required Env	README.md	/^## Required Env$/;"	s
+Required Tool	README.md	/^### Required Tool$/;"	S
+S	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> S  defx#do_action('toggle_sort', 'Time')$/;"	m
+Screenshot (if possible)	.github/ISSUE_TEMPLATE/bug_report.md	/^## Screenshot (if possible)$/;"	s
+Structure	tutorial/tutorial.md	/^## Structure$/;"	s
+Thanks	README.md	/^## Thanks$/;"	s
+ThinkVim Tutorial	tutorial/tutorial.md	/^# ThinkVim Tutorial$/;"	c
+Tutorial	README.md	/^## Tutorial$/;"	s
+User Custom	tutorial/tutorial.md	/^## User Custom$/;"	s
+V	core/plugins/allkey.vim	/^        xmap V <Plug>(expand_region_shrink)$/;"	m
+What is your expect?	.github/ISSUE_TEMPLATE/feature_request.md	/^## What is your expect?$/;"	s
+WhitespaceErase	plugin/whitespace.vim	/^command! -range=% WhitespaceErase call <SID>WhitespaceErase(<line1>,<line2>)$/;"	c
+Y	core/mappings.vim	/^nnoremap Y y\$$/;"	m
+[	core/plugins/allkey.vim	/^		nnoremap <silent>[              :<c-u>WhichKey  '['<CR>$/;"	m
+[English Version](https://github.com/taigacute/nvim-config/blob/master/README-EN.md)	README-CN.md	/^## [English Version](https:\/\/github.com\/taigacute\/nvim-config\/blob\/master\/README-EN.md)$/;"	s
+[Language servers](https://github.com/neoclide/coc.nvim/wiki/Language-servers)	README-CN.md	/^## [Language servers](https:\/\/github.com\/neoclide\/coc.nvim\/wiki\/Language-servers)$/;"	s
+[a	core/plugins/allkey.vim	/^        nmap [a <Plug>(ale_next_wrap)$/;"	m
+[b	core/mappings.vim	/^nnoremap  [b :bn<CR>$/;"	m
+[c	core/plugins/allkey.vim	/^        nmap <silent> [c <Plug>(coc-diagnostic-next)$/;"	m
+[g	core/plugins/allkey.vim	/^        nmap [g <Plug>(coc-git-prevchunk)$/;"	m
+[g	core/plugins/defx.vim	/^	nnoremap <silent><buffer>       [g :<C-u>call <SID>jump_dirty(-1)<CR>$/;"	m
+\\	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr><nowait> \\  defx#do_action('cd', getcwd())$/;"	m
+]	core/plugins/allkey.vim	/^		nnoremap <silent>]              :<c-u>WhichKey  ']'<CR>$/;"	m
+]a	core/plugins/allkey.vim	/^        nmap ]a <Plug>(ale_previous_wrap)$/;"	m
+]b	core/mappings.vim	/^nnoremap  ]b :bp<CR>$/;"	m
+]c	core/plugins/allkey.vim	/^        nmap <silent> ]c <Plug>(coc-diagnostic-prev)$/;"	m
+]g	core/plugins/allkey.vim	/^        nmap ]g <Plug>(coc-git-nextchunk)$/;"	m
+]g	core/plugins/defx.vim	/^	nnoremap <silent><buffer>       ]g :<C-u>call <SID>jump_dirty(1)<CR>$/;"	m
+ab	core/plugins/allkey.vim	/^	omap <silent> ab <Plug>(textobj-multiblock-a)$/;"	m
+ab	core/plugins/allkey.vim	/^	xmap <silent> ab <Plug>(textobj-multiblock-a)$/;"	m
+ab	core/plugins/allkey.vim	/^     omap ab <Plug>(textobj-sandwich-auto-a)$/;"	m
+ab	core/plugins/allkey.vim	/^     xmap ab <Plug>(textobj-sandwich-auto-a)$/;"	m
+as	core/plugins/allkey.vim	/^     omap as <Plug>(textobj-sandwich-query-a)$/;"	m
+as	core/plugins/allkey.vim	/^     xmap as <Plug>(textobj-sandwich-query-a)$/;"	m
+bases	colors/neodark.vim	/^  let bases = s:generate_base_colors(g:neodark#background)$/;"	v
+c	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr><nowait> c  defx#do_action('copy')$/;"	m
+colors_name	colors/monokai.vim	/^let colors_name = "monokai"$/;"	v
+dd	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> dd    defx#do_action('remove_trash')$/;"	m
+etc#_parse_config_files	autoload/etc.vim	/^function! etc#_parse_config_files(config_paths) abort$/;"	f
+etc#init	autoload/etc.vim	/^function! etc#init() abort$/;"	f
+etc#providers#dein#_init	autoload/etc/providers/dein.vim	/^function! etc#providers#dein#_init(config_paths) abort$/;"	f
+etc#util#_find_yaml2json_method	autoload/etc/util.vim	/^function! etc#util#_find_yaml2json_method() abort$/;"	f
+etc#util#_test_python_yaml	autoload/etc/util.vim	/^function! etc#util#_test_python_yaml() abort$/;"	f
+etc#util#_test_ruby_yaml	autoload/etc/util.vim	/^function! etc#util#_test_ruby_yaml() abort$/;"	f
+etc#util#_test_yaml2json	autoload/etc/util.vim	/^function! etc#util#_test_yaml2json() abort$/;"	f
+etc#util#debug	autoload/etc/util.vim	/^function! etc#util#debug(msg) abort$/;"	f
+etc#util#ensure_directory	autoload/etc/util.vim	/^function! etc#util#ensure_directory(paths) abort$/;"	f
+etc#util#error	autoload/etc/util.vim	/^function! etc#util#error(msg) abort$/;"	f
+etc#util#load_config	autoload/etc/util.vim	/^function! etc#util#load_config(filename) abort$/;"	f
+etc#util#load_yaml	autoload/etc/util.vim	/^function! etc#util#load_yaml(filename) abort$/;"	f
+etc#util#source_file	autoload/etc/util.vim	/^function! etc#util#source_file(path, ...) abort$/;"	f
+etc#util#str2list	autoload/etc/util.vim	/^function! etc#util#str2list(expr) abort$/;"	f
+g:ale_echo_msg_error_str	core/plugins/vim-ale.vim	/^let g:ale_echo_msg_error_str = 'E'$/;"	v
+g:ale_echo_msg_format	core/plugins/vim-ale.vim	/^let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'$/;"	v
+g:ale_echo_msg_warning_str	core/plugins/vim-ale.vim	/^let g:ale_echo_msg_warning_str = 'W'$/;"	v
+g:ale_go_golangci_lint_executable	core/plugins/vim-ale.vim	/^let g:ale_go_golangci_lint_executable = '\/Users\/pendragon\/workstation\/bin\/golangci-lint'$/;"	v
+g:ale_lintetrs	core/plugins/vim-ale.vim	/^let g:ale_lintetrs = {$/;"	v
+g:ale_set_highlights	core/plugins/vim-ale.vim	/^let g:ale_set_highlights = 0$/;"	v
+g:ale_sign_column_always	core/plugins/vim-ale.vim	/^let g:ale_sign_column_always = 1$/;"	v
+g:ale_sign_error	core/plugins/vim-ale.vim	/^let g:ale_sign_error = '😡'$/;"	v
+g:ale_sign_warning	core/plugins/vim-ale.vim	/^let g:ale_sign_warning = '😃'$/;"	v
+g:buffet_tab_icon	core/plugins/buffet.vim	/^let g:buffet_tab_icon = "\\uf00a"$/;"	v
+g:choosewin_blink_on_land	core/plugins/vim-choosewin.vim	/^let g:choosewin_blink_on_land = 0$/;"	v
+g:choosewin_color_label	core/plugins/vim-choosewin.vim	/^let g:choosewin_color_label = {$/;"	v
+g:choosewin_color_label_current	core/plugins/vim-choosewin.vim	/^let g:choosewin_color_label_current = {$/;"	v
+g:choosewin_color_other	core/plugins/vim-choosewin.vim	/^let g:choosewin_color_other = {$/;"	v
+g:choosewin_color_overlay	core/plugins/vim-choosewin.vim	/^let g:choosewin_color_overlay = {$/;"	v
+g:choosewin_color_overlay_current	core/plugins/vim-choosewin.vim	/^let g:choosewin_color_overlay_current = {$/;"	v
+g:choosewin_label	core/plugins/vim-choosewin.vim	/^let g:choosewin_label = 'SDFJKLZXCV'$/;"	v
+g:choosewin_overlay_clear_multibyte	core/plugins/vim-choosewin.vim	/^let g:choosewin_overlay_clear_multibyte = 0$/;"	v
+g:choosewin_overlay_enable	core/plugins/vim-choosewin.vim	/^let g:choosewin_overlay_enable = 1$/;"	v
+g:choosewin_statusline_replace	core/plugins/vim-choosewin.vim	/^let g:choosewin_statusline_replace = 1$/;"	v
+g:clipboard	core/general.vim	/^	let g:clipboard = {$/;"	v
+g:colors_name	colors/PaperColor.vim	/^let g:colors_name = "PaperColor"$/;"	v
+g:colors_name	colors/ayu.vim	/^let g:colors_name = "ayu"$/;"	v
+g:colors_name	colors/dracula.vim	/^let g:colors_name = 'dracula'$/;"	v
+g:colors_name	colors/falcon.vim	/^let g:colors_name="falcon"$/;"	v
+g:colors_name	colors/gruvbox.vim	/^let g:colors_name='gruvbox'$/;"	v
+g:colors_name	colors/gruvbox9.vim	/^let g:colors_name = 'gruvbox9'$/;"	v
+g:colors_name	colors/gruvbox9_hard.vim	/^let g:colors_name = 'gruvbox9_hard'$/;"	v
+g:colors_name	colors/gruvbox9_soft.vim	/^let g:colors_name = 'gruvbox9_soft'$/;"	v
+g:colors_name	colors/hybrid_reverse.vim	/^let g:colors_name = "hybrid_reverse"$/;"	v
+g:colors_name	colors/neodark.vim	/^let g:colors_name = 'neodark'$/;"	v
+g:colors_name	colors/seoul256-light.vim	/^    let g:colors_name = &background == 'dark' ? 'seoul256' : 'seoul256-light'$/;"	v
+g:colors_name	colors/seoul256-light.vim	/^    let g:colors_name = 'seoul256'$/;"	v
+g:colors_name	colors/seoul256.vim	/^let g:colors_name = 'seoul256'$/;"	v
+g:colors_name	colors/solarized8.vim	/^let g:colors_name = 'solarized8'$/;"	v
+g:colors_name	colors/solarized8_flat.vim	/^let g:colors_name = 'solarized8_flat'$/;"	v
+g:colors_name	colors/solarized8_high.vim	/^let g:colors_name = 'solarized8_high'$/;"	v
+g:colors_name	colors/solarized8_low.vim	/^let g:colors_name = 'solarized8_low'$/;"	v
+g:colors_name	colors/space_vim_theme.vim	/^let g:colors_name = 'space_vim_theme'$/;"	v
+g:colors_name	colors/srcery.vim	/^let g:colors_name='srcery'$/;"	v
+g:defx_git#indicators	core/plugins/defx-git.vim	/^let g:defx_git#indicators = {$/;"	v
+g:dein#auto_recache	autoload/etc/providers/dein.vim	/^    let g:dein#auto_recache = 1$/;"	v
+g:dein#enable_notification	autoload/etc/providers/dein.vim	/^    let g:dein#enable_notification = 1$/;"	v
+g:dein#install_log_filename	autoload/etc/providers/dein.vim	/^    let g:dein#install_log_filename = g:etc#cache_path . '\/dein.log'$/;"	v
+g:dein#install_max_processes	autoload/etc/providers/dein.vim	/^    let g:dein#install_max_processes = 16$/;"	v
+g:dein#install_progress_type	autoload/etc/providers/dein.vim	/^    let g:dein#install_progress_type = 'echo'$/;"	v
+g:dracula_bold	colors/dracula.vim	/^  let g:dracula_bold = 1$/;"	v
+g:dracula_colorterm	colors/dracula.vim	/^  let g:dracula_colorterm = 1$/;"	v
+g:dracula_inverse	colors/dracula.vim	/^  let g:dracula_inverse = 1$/;"	v
+g:dracula_italic	colors/dracula.vim	/^  let g:dracula_italic = 1$/;"	v
+g:dracula_palette	colors/dracula.vim	/^let g:dracula_palette = {$/;"	v
+g:dracula_undercurl	colors/dracula.vim	/^  let g:dracula_undercurl = 1$/;"	v
+g:dracula_underline	colors/dracula.vim	/^  let g:dracula_underline = 1$/;"	v
+g:etc#cache_path	autoload/etc.vim	/^let g:etc#cache_path =$/;"	v
+g:etc#config_paths	autoload/etc.vim	/^let g:etc#config_paths = get(g:, 'etc#config_paths', [$/;"	v
+g:etc#package_manager	autoload/etc.vim	/^let g:etc#package_manager = get(g:, 'etc#package_manager', 'dein')$/;"	v
+g:etc#vim_path	autoload/etc.vim	/^let g:etc#vim_path =$/;"	v
+g:fzf_action	core/plugins/fzf.vim	/^let g:fzf_action = {$/;"	v
+g:fzf_colors	core/plugins/fzf.vim	/^let g:fzf_colors =$/;"	v
+g:fzf_commits_log_options	core/plugins/fzf.vim	/^let g:fzf_commits_log_options = '--graph --color=always$/;"	v
+g:fzf_layout	core/plugins/fzf.vim	/^let g:fzf_layout = { 'window': 'call FloatingFZF()' }$/;"	v
+g:gitgutter_override_sign_column_highlight	colors/gruvbox.vim	/^  let g:gitgutter_override_sign_column_highlight = 0$/;"	v
+g:go_def_mapping_enabled	core/plugins/vim-go.vim	/^let g:go_def_mapping_enabled = 0$/;"	v
+g:go_doc_keywordprg_enabled	core/plugins/vim-go.vim	/^let g:go_doc_keywordprg_enabled = 0$/;"	v
+g:go_fmt_command	core/plugins/vim-go.vim	/^let g:go_fmt_command = "goimports"$/;"	v
+g:go_highlight_build_constraints	core/plugins/vim-go.vim	/^let g:go_highlight_build_constraints = 1$/;"	v
+g:go_highlight_extra_types	core/plugins/vim-go.vim	/^let g:go_highlight_extra_types = 1$/;"	v
+g:go_highlight_fields	core/plugins/vim-go.vim	/^let g:go_highlight_fields = 1$/;"	v
+g:go_highlight_function_calls	core/plugins/vim-go.vim	/^let g:go_highlight_function_calls = 1$/;"	v
+g:go_highlight_functions	core/plugins/vim-go.vim	/^let g:go_highlight_functions = 1$/;"	v
+g:go_highlight_generate_tags	core/plugins/vim-go.vim	/^let g:go_highlight_generate_tags = 1$/;"	v
+g:go_highlight_methods	core/plugins/vim-go.vim	/^let g:go_highlight_methods = 1$/;"	v
+g:go_highlight_operators	core/plugins/vim-go.vim	/^let g:go_highlight_operators = 1$/;"	v
+g:go_highlight_structs	core/plugins/vim-go.vim	/^let g:go_highlight_structs = 1$/;"	v
+g:go_highlight_types	core/plugins/vim-go.vim	/^let g:go_highlight_types = 1$/;"	v
+g:gruvbox_bold	colors/gruvbox.vim	/^  let g:gruvbox_bold=1$/;"	v
+g:gruvbox_contrast_dark	colors/gruvbox.vim	/^  let g:gruvbox_contrast_dark='medium'$/;"	v
+g:gruvbox_contrast_light	colors/gruvbox.vim	/^  let g:gruvbox_contrast_light='medium'$/;"	v
+g:gruvbox_guisp_fallback	colors/gruvbox.vim	/^  let g:gruvbox_guisp_fallback='NONE'$/;"	v
+g:gruvbox_improved_strings	colors/gruvbox.vim	/^  let g:gruvbox_improved_strings=0$/;"	v
+g:gruvbox_improved_warnings	colors/gruvbox.vim	/^  let g:gruvbox_improved_warnings=0$/;"	v
+g:gruvbox_inverse	colors/gruvbox.vim	/^  let g:gruvbox_inverse=1$/;"	v
+g:gruvbox_invert_indent_guides	colors/gruvbox.vim	/^  let g:gruvbox_invert_indent_guides=0$/;"	v
+g:gruvbox_italic	colors/gruvbox.vim	/^    let g:gruvbox_italic=0$/;"	v
+g:gruvbox_italic	colors/gruvbox.vim	/^    let g:gruvbox_italic=1$/;"	v
+g:gruvbox_termcolors	colors/gruvbox.vim	/^  let g:gruvbox_termcolors=256$/;"	v
+g:gruvbox_undercurl	colors/gruvbox.vim	/^  let g:gruvbox_undercurl=1$/;"	v
+g:gruvbox_underline	colors/gruvbox.vim	/^  let g:gruvbox_underline=1$/;"	v
+g:gutentags_cache_dir	core/plugins/vim-gutentags.vim	/^    let g:gutentags_cache_dir = $VARPATH.'\/tags'$/;"	v
+g:gutentags_ctags_exclude	core/plugins/vim-gutentags.vim	/^    let g:gutentags_ctags_exclude = [$/;"	v
+g:gutentags_ctags_exclude_wildignore	core/plugins/vim-gutentags.vim	/^    let g:gutentags_ctags_exclude_wildignore = 1$/;"	v
+g:gutentags_generate_on_missing	core/plugins/vim-gutentags.vim	/^    let g:gutentags_generate_on_missing = 0$/;"	v
+g:gutentags_generate_on_new	core/plugins/vim-gutentags.vim	/^    let g:gutentags_generate_on_new = 0$/;"	v
+g:gutentags_generate_on_write	core/plugins/vim-gutentags.vim	/^    let g:gutentags_generate_on_write = 1$/;"	v
+g:indentLine_bgcolor_gui	colors/neodark.vim	/^let g:indentLine_bgcolor_gui = s:base1[0]$/;"	v
+g:indentLine_bgcolor_term	colors/neodark.vim	/^let g:indentLine_bgcolor_term = s:base1[1]$/;"	v
+g:indentLine_color_gui	colors/gruvbox.vim	/^  let g:indentLine_color_gui = s:bg2[0]$/;"	v
+g:indentLine_color_gui	colors/gruvbox9.vim	/^        let g:indentLine_color_gui = '#504945'$/;"	v
+g:indentLine_color_gui	colors/gruvbox9.vim	/^      let g:indentLine_color_gui = '#d5c4a1'$/;"	v
+g:indentLine_color_gui	colors/gruvbox9_hard.vim	/^        let g:indentLine_color_gui = '#504945'$/;"	v
+g:indentLine_color_gui	colors/gruvbox9_hard.vim	/^      let g:indentLine_color_gui = '#d5c4a1'$/;"	v
+g:indentLine_color_gui	colors/gruvbox9_soft.vim	/^        let g:indentLine_color_gui = '#504945'$/;"	v
+g:indentLine_color_gui	colors/gruvbox9_soft.vim	/^      let g:indentLine_color_gui = '#d5c4a1'$/;"	v
+g:indentLine_color_gui	colors/neodark.vim	/^let g:indentLine_color_gui = s:base3[0]$/;"	v
+g:indentLine_color_gui	colors/space_vim_theme.vim	/^      let g:indentLine_color_gui = '#100a14'$/;"	v
+g:indentLine_color_gui	colors/space_vim_theme.vim	/^    let g:indentLine_color_gui = '#e3dedd'$/;"	v
+g:indentLine_color_gui	core/plugins/indentline.vim	/^let g:indentLine_color_gui= '#725972'$/;"	v
+g:indentLine_color_term	colors/gruvbox.vim	/^  let g:indentLine_color_term = s:bg2[1]$/;"	v
+g:indentLine_color_term	colors/gruvbox9.vim	/^        let g:indentLine_color_term = 239$/;"	v
+g:indentLine_color_term	colors/gruvbox9.vim	/^      let g:indentLine_color_term = 187$/;"	v
+g:indentLine_color_term	colors/gruvbox9_hard.vim	/^        let g:indentLine_color_term = 239$/;"	v
+g:indentLine_color_term	colors/gruvbox9_hard.vim	/^      let g:indentLine_color_term = 187$/;"	v
+g:indentLine_color_term	colors/gruvbox9_soft.vim	/^        let g:indentLine_color_term = 239$/;"	v
+g:indentLine_color_term	colors/gruvbox9_soft.vim	/^      let g:indentLine_color_term = 180$/;"	v
+g:indentLine_color_term	colors/neodark.vim	/^let g:indentLine_color_term = s:base3[1]$/;"	v
+g:indentLine_color_term	colors/space_vim_theme.vim	/^      let g:indentLine_color_term = 232$/;"	v
+g:indentLine_color_term	colors/space_vim_theme.vim	/^    let g:indentLine_color_term = 254$/;"	v
+g:indentLine_color_term	core/plugins/indentline.vim	/^let g:indentLine_color_term = 96$/;"	v
+g:indentLine_concealcursor	core/plugins/indentline.vim	/^let g:indentLine_concealcursor = 'niv'$/;"	v
+g:indentLine_fileTypeExclude	core/plugins/indentline.vim	/^let g:indentLine_fileTypeExclude = ['defx', 'denite','startify','tagbar','vista_kind','vista']$/;"	v
+g:indentLine_showFirstIndentLevel	core/plugins/indentline.vim	/^let g:indentLine_showFirstIndentLevel =1$/;"	v
+g:indent_guides_auto_colors	colors/gruvbox.vim	/^  let g:indent_guides_auto_colors = 0$/;"	v
+g:indent_guides_auto_colors	colors/seoul256.vim	/^let g:indent_guides_auto_colors = 0$/;"	v
+g:indentline_char	core/plugins/indentline.vim	/^let g:indentline_char='┆'$/;"	v
+g:indentline_enabled	core/plugins/indentline.vim	/^let g:indentline_enabled = 1$/;"	v
+g:jsx_ext_required	core/plugins/neoformat.vim	/^let g:jsx_ext_required = 0$/;"	v
+g:loaded_2html_plugin	core/vimrc	/^let g:loaded_2html_plugin = 1$/;"	v
+g:loaded_difftools	plugin/difftools.vim	/^let g:loaded_difftools = 1$/;"	v
+g:loaded_getscript	core/vimrc	/^let g:loaded_getscript = 1$/;"	v
+g:loaded_getscriptPlugin	core/vimrc	/^let g:loaded_getscriptPlugin = 1$/;"	v
+g:loaded_gzip	core/vimrc	/^let g:loaded_gzip = 1$/;"	v
+g:loaded_logiPat	core/vimrc	/^let g:loaded_logiPat = 1$/;"	v
+g:loaded_matchit	core/vimrc	/^let g:loaded_matchit = 1$/;"	v
+g:loaded_matchparen	core/vimrc	/^let g:loaded_matchparen = 1$/;"	v
+g:loaded_nicefold	plugin/nicefold.vim	/^let g:loaded_nicefold = 1$/;"	v
+g:loaded_rrhelper	core/vimrc	/^let g:loaded_rrhelper = 1$/;"	v
+g:loaded_shada_plugin	core/vimrc	/^let g:loaded_shada_plugin = 1$/;"	v
+g:loaded_tar	core/vimrc	/^let g:loaded_tar = 1$/;"	v
+g:loaded_tarPlugin	core/vimrc	/^let g:loaded_tarPlugin = 1$/;"	v
+g:loaded_tutor_mode_plugin	core/vimrc	/^let g:loaded_tutor_mode_plugin = 1$/;"	v
+g:loaded_vimball	core/vimrc	/^let g:loaded_vimball = 1$/;"	v
+g:loaded_vimballPlugin	core/vimrc	/^let g:loaded_vimballPlugin = 1$/;"	v
+g:loaded_zip	core/vimrc	/^let g:loaded_zip = 1$/;"	v
+g:loaded_zipPlugin	core/vimrc	/^let g:loaded_zipPlugin = 1$/;"	v
+g:mapleader	core/vimrc	/^	let g:mapleader="\\<Space>"$/;"	v
+g:maplocalleader	core/vimrc	/^	let g:maplocalleader=';'$/;"	v
+g:monokai_gui_italic	colors/monokai.vim	/^    let g:monokai_gui_italic = 1$/;"	v
+g:monokai_term_italic	colors/monokai.vim	/^    let g:monokai_term_italic = 0$/;"	v
+g:monokai_termcolors	colors/monokai.vim	/^let g:monokai_termcolors = 256 " does not support 16 color term right now.$/;"	v
+g:neodark#background	colors/neodark.vim	/^  let g:neodark#background = ''$/;"	v
+g:neodark#italics	colors/neodark.vim	/^  let g:neodark#italics = 0$/;"	v
+g:neodark#solid_vertsplit	colors/neodark.vim	/^  let g:neodark#solid_vertsplit = 0$/;"	v
+g:neodark#terminal_transparent	colors/neodark.vim	/^  let g:neodark#terminal_transparent = 0$/;"	v
+g:neodark#use_256color	colors/neodark.vim	/^  let g:neodark#use_256color = 0$/;"	v
+g:neodark#use_custom_terminal_theme	colors/neodark.vim	/^  let g:neodark#use_custom_terminal_theme = 0$/;"	v
+g:neoformat_enabled_html	core/plugins/neoformat.vim	/^let g:neoformat_enabled_html=['js-beautify']$/;"	v
+g:neoformat_enabled_javascript	core/plugins/neoformat.vim	/^let g:neoformat_enabled_javascript=['prettier']$/;"	v
+g:neoformat_try_formatprg	core/plugins/neoformat.vim	/^let g:neoformat_try_formatprg = 1$/;"	v
+g:netrw_nogx	core/vimrc	/^let g:netrw_nogx = 1 " disable netrw's gx mapping.$/;"	v
+g:niji_dark_colours	colors/gruvbox.vim	/^let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/gruvbox9.vim	/^      let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/gruvbox9.vim	/^    let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/gruvbox9_hard.vim	/^      let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/gruvbox9_hard.vim	/^    let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/gruvbox9_soft.vim	/^      let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/gruvbox9_soft.vim	/^    let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/space_vim_theme.vim	/^    let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/space_vim_theme.vim	/^  let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_dark_colours	colors/srcery.vim	/^let g:niji_dark_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/gruvbox.vim	/^let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/gruvbox9.vim	/^      let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/gruvbox9.vim	/^    let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/gruvbox9_hard.vim	/^      let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/gruvbox9_hard.vim	/^    let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/gruvbox9_soft.vim	/^      let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/gruvbox9_soft.vim	/^    let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/space_vim_theme.vim	/^    let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/space_vim_theme.vim	/^  let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:niji_light_colours	colors/srcery.vim	/^let g:niji_light_colours = g:rbpt_colorpairs$/;"	v
+g:rainbow_conf	colors/gruvbox.vim	/^   let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/gruvbox.vim	/^   let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/gruvbox.vim	/^   let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/gruvbox9.vim	/^        let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/gruvbox9.vim	/^        let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/gruvbox9.vim	/^        let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/gruvbox9.vim	/^      let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/gruvbox9.vim	/^      let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/gruvbox9.vim	/^      let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/gruvbox9_hard.vim	/^        let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/gruvbox9_hard.vim	/^        let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/gruvbox9_hard.vim	/^        let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/gruvbox9_hard.vim	/^      let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/gruvbox9_hard.vim	/^      let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/gruvbox9_hard.vim	/^      let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/gruvbox9_soft.vim	/^        let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/gruvbox9_soft.vim	/^        let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/gruvbox9_soft.vim	/^        let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/gruvbox9_soft.vim	/^      let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/gruvbox9_soft.vim	/^      let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/gruvbox9_soft.vim	/^      let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/space_vim_theme.vim	/^      let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/space_vim_theme.vim	/^      let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/space_vim_theme.vim	/^      let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/space_vim_theme.vim	/^    let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/space_vim_theme.vim	/^    let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/space_vim_theme.vim	/^    let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_conf	colors/srcery.vim	/^  let g:rainbow_conf = {}$/;"	v
+g:rainbow_conf	colors/srcery.vim	/^  let g:rainbow_conf['ctermfgs'] = g:rainbow_ctermfgs$/;"	v
+g:rainbow_conf	colors/srcery.vim	/^  let g:rainbow_conf['guifgs'] = g:rainbow_guifgs$/;"	v
+g:rainbow_ctermfgs	colors/gruvbox.vim	/^let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/gruvbox9.vim	/^      let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/gruvbox9.vim	/^    let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/gruvbox9_hard.vim	/^      let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/gruvbox9_hard.vim	/^    let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/gruvbox9_soft.vim	/^      let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/gruvbox9_soft.vim	/^    let g:rainbow_ctermfgs = [ '166', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/space_vim_theme.vim	/^    let g:rainbow_ctermfgs = [ '173', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/space_vim_theme.vim	/^  let g:rainbow_ctermfgs = [ '173', 'red', 'magenta', 'blue' ]$/;"	v
+g:rainbow_ctermfgs	colors/srcery.vim	/^let g:rainbow_ctermfgs = [ 'magenta', 'red', '202', 'blue' ]$/;"	v
+g:rainbow_guifgs	colors/gruvbox.vim	/^let g:rainbow_guifgs = [ '#d65d0e', '#cc241d', '#b16286', '#458588' ]$/;"	v
+g:rainbow_guifgs	colors/gruvbox9.vim	/^      let g:rainbow_guifgs = [ '#d65d0e', '#cc241d', '#b16286', '#458588' ]$/;"	v
+g:rainbow_guifgs	colors/gruvbox9.vim	/^    let g:rainbow_guifgs = [ '#d65d0e', '#cc241d', '#b16286', '#458588' ]$/;"	v
+g:rainbow_guifgs	colors/gruvbox9_hard.vim	/^      let g:rainbow_guifgs = [ '#d65d0e', '#cc241d', '#b16286', '#458588' ]$/;"	v
+g:rainbow_guifgs	colors/gruvbox9_hard.vim	/^    let g:rainbow_guifgs = [ '#d65d0e', '#cc241d', '#b16286', '#458588' ]$/;"	v
+g:rainbow_guifgs	colors/gruvbox9_soft.vim	/^      let g:rainbow_guifgs = [ '#d65d0e', '#cc241d', '#b16286', '#458588' ]$/;"	v
+g:rainbow_guifgs	colors/gruvbox9_soft.vim	/^    let g:rainbow_guifgs = [ '#d65d0e', '#cc241d', '#b16286', '#458588' ]$/;"	v
+g:rainbow_guifgs	colors/space_vim_theme.vim	/^    let g:rainbow_guifgs = [ '#ca754b', '#d26487', '#a15ea7', '#6981c5' ]$/;"	v
+g:rainbow_guifgs	colors/space_vim_theme.vim	/^  let g:rainbow_guifgs = [ '#ca754b', '#d26487', '#a15ea7', '#6981c5' ]$/;"	v
+g:rainbow_guifgs	colors/srcery.vim	/^let g:rainbow_guifgs = [ '#E02C6D', '#EF2F27', '#D75F00', '#2C78BF']$/;"	v
+g:rbpt_colorpairs	colors/gruvbox.vim	/^  let g:rbpt_colorpairs =$/;"	v
+g:rbpt_colorpairs	colors/gruvbox9.vim	/^        let g:rbpt_colorpairs = [['blue', '#458588'], ['magenta', '#b16286'],$/;"	v
+g:rbpt_colorpairs	colors/gruvbox9.vim	/^      let g:rbpt_colorpairs = [['blue', '#458588'], ['magenta', '#b16286'],$/;"	v
+g:rbpt_colorpairs	colors/gruvbox9_hard.vim	/^        let g:rbpt_colorpairs = [['blue', '#458588'], ['magenta', '#b16286'],$/;"	v
+g:rbpt_colorpairs	colors/gruvbox9_hard.vim	/^      let g:rbpt_colorpairs = [['blue', '#458588'], ['magenta', '#b16286'],$/;"	v
+g:rbpt_colorpairs	colors/gruvbox9_soft.vim	/^        let g:rbpt_colorpairs = [['blue', '#458588'], ['magenta', '#b16286'],$/;"	v
+g:rbpt_colorpairs	colors/gruvbox9_soft.vim	/^      let g:rbpt_colorpairs = [['blue', '#458588'], ['magenta', '#b16286'],$/;"	v
+g:rbpt_colorpairs	colors/space_vim_theme.vim	/^      let g:rbpt_colorpairs = [['blue', '#6981c5'], ['magenta', '#a15ea7'],$/;"	v
+g:rbpt_colorpairs	colors/space_vim_theme.vim	/^    let g:rbpt_colorpairs = [['blue', '#6981c5'], ['magenta', '#a15ea7'],$/;"	v
+g:rbpt_colorpairs	colors/srcery.vim	/^  let g:rbpt_colorpairs =$/;"	v
+g:seoul256_background	colors/seoul256-light.vim	/^      let g:seoul256_background = s:backup$/;"	v
+g:seoul256_background	colors/seoul256-light.vim	/^      let g:seoul256_background = s:custom_bg$/;"	v
+g:seoul256_current_bg	colors/seoul256.vim	/^let g:seoul256_current_bg = [s:dark_bg, s:light_bg][s:style_idx]$/;"	v
+g:seoul256_current_fg	colors/seoul256.vim	/^let g:seoul256_current_fg = [s:dark_fg, s:light_fg][s:style_idx]$/;"	v
+g:splitjoin_join_mapping	core/plugins/allkey.vim	/^        let g:splitjoin_join_mapping = ''$/;"	v
+g:splitjoin_split_mapping	core/plugins/allkey.vim	/^        let g:splitjoin_split_mapping = ''$/;"	v
+g:srcery_bold	colors/srcery.vim	/^  let g:srcery_bold=1$/;"	v
+g:srcery_dim_lisp_paren	colors/srcery.vim	/^  let g:srcery_dim_lisp_paren=0$/;"	v
+g:srcery_inverse	colors/srcery.vim	/^  let g:srcery_inverse=1$/;"	v
+g:srcery_inverse_match_paren	colors/srcery.vim	/^  let g:srcery_inverse_match_paren=0$/;"	v
+g:srcery_inverse_matches	colors/srcery.vim	/^  let g:srcery_inverse_matches=0$/;"	v
+g:srcery_italic	colors/srcery.vim	/^    let g:srcery_italic=0$/;"	v
+g:srcery_italic	colors/srcery.vim	/^    let g:srcery_italic=1$/;"	v
+g:srcery_transparent_background	colors/srcery.vim	/^  let g:srcery_transparent_background=0$/;"	v
+g:srcery_undercurl	colors/srcery.vim	/^  let g:srcery_undercurl=1$/;"	v
+g:srcery_underline	colors/srcery.vim	/^  let g:srcery_underline=1$/;"	v
+g:startify_custom_footer	core/plugins/startify.vim	/^let g:startify_custom_footer = s:center(s:footer)$/;"	v
+g:startify_custom_header	core/plugins/startify.vim	/^let g:startify_custom_header = s:center(s:header)$/;"	v
+g:startify_padding_left	core/plugins/startify.vim	/^let g:startify_padding_left = 30$/;"	v
+g:terminal_ansi_colors	colors/dracula.vim	/^  let g:terminal_ansi_colors = [$/;"	v
+g:terminal_ansi_colors	colors/gruvbox9.vim	/^    let g:terminal_ansi_colors = ['#282828', '#cc241d', '#98971a', '#d79921',$/;"	v
+g:terminal_ansi_colors	colors/gruvbox9.vim	/^  let g:terminal_ansi_colors = ['#fbf1c7', '#cc241d', '#98971a', '#d79921',$/;"	v
+g:terminal_ansi_colors	colors/gruvbox9_hard.vim	/^    let g:terminal_ansi_colors = ['#1d2021', '#cc241d', '#98971a', '#d79921',$/;"	v
+g:terminal_ansi_colors	colors/gruvbox9_hard.vim	/^  let g:terminal_ansi_colors = ['#f9f5d7', '#cc241d', '#98971a', '#d79921',$/;"	v
+g:terminal_ansi_colors	colors/gruvbox9_soft.vim	/^    let g:terminal_ansi_colors = ['#32302f', '#cc241d', '#98971a', '#d79921',$/;"	v
+g:terminal_ansi_colors	colors/gruvbox9_soft.vim	/^  let g:terminal_ansi_colors = ['#f2e5bc', '#cc241d', '#98971a', '#d79921',$/;"	v
+g:terminal_ansi_colors	colors/neodark.vim	/^let g:terminal_ansi_colors = [s:base1[0], s:red[0], s:green[0], s:yellow[0],$/;"	v
+g:terminal_ansi_colors	colors/solarized8.vim	/^    let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d3368/;"	v
+g:terminal_ansi_colors	colors/solarized8.vim	/^  let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682'/;"	v
+g:terminal_ansi_colors	colors/solarized8.vim	/^let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', /;"	v
+g:terminal_ansi_colors	colors/solarized8_flat.vim	/^    let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d3368/;"	v
+g:terminal_ansi_colors	colors/solarized8_flat.vim	/^  let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682'/;"	v
+g:terminal_ansi_colors	colors/solarized8_flat.vim	/^let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', /;"	v
+g:terminal_ansi_colors	colors/solarized8_high.vim	/^    let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d3368/;"	v
+g:terminal_ansi_colors	colors/solarized8_high.vim	/^  let g:terminal_ansi_colors = ['#002b36', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682'/;"	v
+g:terminal_ansi_colors	colors/solarized8_high.vim	/^  let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682'/;"	v
+g:terminal_ansi_colors	colors/solarized8_high.vim	/^let g:terminal_ansi_colors = ['#002b36', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', /;"	v
+g:terminal_ansi_colors	colors/solarized8_low.vim	/^    let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d3368/;"	v
+g:terminal_ansi_colors	colors/solarized8_low.vim	/^  let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682'/;"	v
+g:terminal_ansi_colors	colors/solarized8_low.vim	/^let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', /;"	v
+g:terminal_ansi_colors	colors/space_vim_theme.vim	/^  let g:terminal_ansi_colors = [$/;"	v
+g:terminal_ansi_colors	colors/space_vim_theme.vim	/^let g:terminal_ansi_colors = [$/;"	v
+g:terminal_color_0	colors/PaperColor.vim	/^  let g:terminal_color_0  = color00[0]$/;"	v
+g:terminal_color_0	colors/ayu.vim	/^  let g:terminal_color_0 =  s:palette.bg[s:style]$/;"	v
+g:terminal_color_0	colors/dracula.vim	/^  let g:terminal_color_0  = '#21222C'$/;"	v
+g:terminal_color_0	colors/gruvbox.vim	/^  let g:terminal_color_0 = s:bg0[0]$/;"	v
+g:terminal_color_0	colors/gruvbox9.vim	/^      let g:terminal_color_0 = '#282828'$/;"	v
+g:terminal_color_0	colors/gruvbox9.vim	/^    let g:terminal_color_0 = '#fbf1c7'$/;"	v
+g:terminal_color_0	colors/gruvbox9_hard.vim	/^      let g:terminal_color_0 = '#1d2021'$/;"	v
+g:terminal_color_0	colors/gruvbox9_hard.vim	/^    let g:terminal_color_0 = '#f9f5d7'$/;"	v
+g:terminal_color_0	colors/gruvbox9_soft.vim	/^      let g:terminal_color_0 = '#32302f'$/;"	v
+g:terminal_color_0	colors/gruvbox9_soft.vim	/^    let g:terminal_color_0 = '#f2e5bc'$/;"	v
+g:terminal_color_0	colors/neodark.vim	/^  let g:terminal_color_0  = s:base1[0]$/;"	v
+g:terminal_color_0	colors/solarized8.vim	/^      let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8.vim	/^    let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8.vim	/^  let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8_flat.vim	/^      let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8_flat.vim	/^    let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8_flat.vim	/^  let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8_high.vim	/^      let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8_high.vim	/^    let g:terminal_color_0='#002b36'$/;"	v
+g:terminal_color_0	colors/solarized8_high.vim	/^    let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8_high.vim	/^  let g:terminal_color_0='#002b36'$/;"	v
+g:terminal_color_0	colors/solarized8_low.vim	/^      let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8_low.vim	/^    let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/solarized8_low.vim	/^  let g:terminal_color_0='#073642'$/;"	v
+g:terminal_color_0	colors/space_vim_theme.vim	/^    let g:terminal_color_0  = '#292b2e'$/;"	v
+g:terminal_color_0	colors/space_vim_theme.vim	/^  let g:terminal_color_0  = '#fbf8ef'$/;"	v
+g:terminal_color_0	colors/srcery.vim	/^  let g:terminal_color_0 = s:black[0]$/;"	v
+g:terminal_color_1	colors/PaperColor.vim	/^  let g:terminal_color_1  = color01[0]$/;"	v
+g:terminal_color_1	colors/ayu.vim	/^  let g:terminal_color_1 =  s:palette.markup[s:style]$/;"	v
+g:terminal_color_1	colors/dracula.vim	/^  let g:terminal_color_1  = '#FF5555'$/;"	v
+g:terminal_color_1	colors/gruvbox.vim	/^  let g:terminal_color_1 = s:gb.neutral_red[0]$/;"	v
+g:terminal_color_1	colors/gruvbox9.vim	/^      let g:terminal_color_1 = '#cc241d'$/;"	v
+g:terminal_color_1	colors/gruvbox9.vim	/^    let g:terminal_color_1 = '#cc241d'$/;"	v
+g:terminal_color_1	colors/gruvbox9_hard.vim	/^      let g:terminal_color_1 = '#cc241d'$/;"	v
+g:terminal_color_1	colors/gruvbox9_hard.vim	/^    let g:terminal_color_1 = '#cc241d'$/;"	v
+g:terminal_color_1	colors/gruvbox9_soft.vim	/^      let g:terminal_color_1 = '#cc241d'$/;"	v
+g:terminal_color_1	colors/gruvbox9_soft.vim	/^    let g:terminal_color_1 = '#cc241d'$/;"	v
+g:terminal_color_1	colors/neodark.vim	/^  let g:terminal_color_1  = s:red[0]$/;"	v
+g:terminal_color_1	colors/solarized8.vim	/^      let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8.vim	/^    let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8.vim	/^  let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_flat.vim	/^      let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_flat.vim	/^    let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_flat.vim	/^  let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_high.vim	/^      let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_high.vim	/^    let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_high.vim	/^  let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_low.vim	/^      let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_low.vim	/^    let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/solarized8_low.vim	/^  let g:terminal_color_1='#dc322f'$/;"	v
+g:terminal_color_1	colors/space_vim_theme.vim	/^    let g:terminal_color_1  = '#d26487'$/;"	v
+g:terminal_color_1	colors/space_vim_theme.vim	/^  let g:terminal_color_1  = '#d26487'$/;"	v
+g:terminal_color_1	colors/srcery.vim	/^  let g:terminal_color_1 = s:red[0]$/;"	v
+g:terminal_color_10	colors/PaperColor.vim	/^  let g:terminal_color_10 = color10[0]$/;"	v
+g:terminal_color_10	colors/ayu.vim	/^  let g:terminal_color_10 = s:palette.string[s:style]$/;"	v
+g:terminal_color_10	colors/dracula.vim	/^  let g:terminal_color_10 = '#69FF94'$/;"	v
+g:terminal_color_10	colors/gruvbox.vim	/^  let g:terminal_color_10 = s:green[0]$/;"	v
+g:terminal_color_10	colors/gruvbox9.vim	/^      let g:terminal_color_10 = '#b8bb26'$/;"	v
+g:terminal_color_10	colors/gruvbox9.vim	/^    let g:terminal_color_10 = '#79740e'$/;"	v
+g:terminal_color_10	colors/gruvbox9_hard.vim	/^      let g:terminal_color_10 = '#b8bb26'$/;"	v
+g:terminal_color_10	colors/gruvbox9_hard.vim	/^    let g:terminal_color_10 = '#79740e'$/;"	v
+g:terminal_color_10	colors/gruvbox9_soft.vim	/^      let g:terminal_color_10 = '#b8bb26'$/;"	v
+g:terminal_color_10	colors/gruvbox9_soft.vim	/^    let g:terminal_color_10 = '#79740e'$/;"	v
+g:terminal_color_10	colors/neodark.vim	/^  let g:terminal_color_10 = s:teal[0]$/;"	v
+g:terminal_color_10	colors/solarized8.vim	/^      let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/solarized8.vim	/^    let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/solarized8.vim	/^  let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/solarized8_flat.vim	/^      let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/solarized8_flat.vim	/^    let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/solarized8_flat.vim	/^  let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/solarized8_high.vim	/^      let g:terminal_color_10='#657b83'$/;"	v
+g:terminal_color_10	colors/solarized8_high.vim	/^    let g:terminal_color_10='#073642'$/;"	v
+g:terminal_color_10	colors/solarized8_high.vim	/^    let g:terminal_color_10='#657b83'$/;"	v
+g:terminal_color_10	colors/solarized8_high.vim	/^  let g:terminal_color_10='#073642'$/;"	v
+g:terminal_color_10	colors/solarized8_low.vim	/^      let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/solarized8_low.vim	/^    let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/solarized8_low.vim	/^  let g:terminal_color_10='#586e75'$/;"	v
+g:terminal_color_10	colors/space_vim_theme.vim	/^    let g:terminal_color_10 = '#67b11d'$/;"	v
+g:terminal_color_10	colors/space_vim_theme.vim	/^  let g:terminal_color_10 = '#67b11d'$/;"	v
+g:terminal_color_10	colors/srcery.vim	/^  let g:terminal_color_10 = s:bright_green[0]$/;"	v
+g:terminal_color_11	colors/PaperColor.vim	/^  let g:terminal_color_11 = color11[0]$/;"	v
+g:terminal_color_11	colors/ayu.vim	/^  let g:terminal_color_11 = s:palette.accent[s:style]$/;"	v
+g:terminal_color_11	colors/dracula.vim	/^  let g:terminal_color_11 = '#FFFFA5'$/;"	v
+g:terminal_color_11	colors/gruvbox.vim	/^  let g:terminal_color_11 = s:yellow[0]$/;"	v
+g:terminal_color_11	colors/gruvbox9.vim	/^      let g:terminal_color_11 = '#fabd2f'$/;"	v
+g:terminal_color_11	colors/gruvbox9.vim	/^    let g:terminal_color_11 = '#b57614'$/;"	v
+g:terminal_color_11	colors/gruvbox9_hard.vim	/^      let g:terminal_color_11 = '#fabd2f'$/;"	v
+g:terminal_color_11	colors/gruvbox9_hard.vim	/^    let g:terminal_color_11 = '#b57614'$/;"	v
+g:terminal_color_11	colors/gruvbox9_soft.vim	/^      let g:terminal_color_11 = '#fabd2f'$/;"	v
+g:terminal_color_11	colors/gruvbox9_soft.vim	/^    let g:terminal_color_11 = '#b57614'$/;"	v
+g:terminal_color_11	colors/neodark.vim	/^  let g:terminal_color_11 = s:beige[0]$/;"	v
+g:terminal_color_11	colors/solarized8.vim	/^      let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/solarized8.vim	/^    let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/solarized8.vim	/^  let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/solarized8_flat.vim	/^      let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/solarized8_flat.vim	/^    let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/solarized8_flat.vim	/^  let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/solarized8_high.vim	/^      let g:terminal_color_11='#839496'$/;"	v
+g:terminal_color_11	colors/solarized8_high.vim	/^    let g:terminal_color_11='#586e75'$/;"	v
+g:terminal_color_11	colors/solarized8_high.vim	/^    let g:terminal_color_11='#839496'$/;"	v
+g:terminal_color_11	colors/solarized8_high.vim	/^  let g:terminal_color_11='#586e75'$/;"	v
+g:terminal_color_11	colors/solarized8_low.vim	/^      let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/solarized8_low.vim	/^    let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/solarized8_low.vim	/^  let g:terminal_color_11='#657b83'$/;"	v
+g:terminal_color_11	colors/space_vim_theme.vim	/^    let g:terminal_color_11 = '#b1951d'$/;"	v
+g:terminal_color_11	colors/space_vim_theme.vim	/^  let g:terminal_color_11 = '#b1951d'$/;"	v
+g:terminal_color_11	colors/srcery.vim	/^  let g:terminal_color_11 = s:bright_yellow[0]$/;"	v
+g:terminal_color_12	colors/PaperColor.vim	/^  let g:terminal_color_12 = color12[0]$/;"	v
+g:terminal_color_12	colors/ayu.vim	/^  let g:terminal_color_12 = s:palette.tag[s:style]$/;"	v
+g:terminal_color_12	colors/dracula.vim	/^  let g:terminal_color_12 = '#D6ACFF'$/;"	v
+g:terminal_color_12	colors/gruvbox.vim	/^  let g:terminal_color_12 = s:blue[0]$/;"	v
+g:terminal_color_12	colors/gruvbox9.vim	/^      let g:terminal_color_12 = '#83a598'$/;"	v
+g:terminal_color_12	colors/gruvbox9.vim	/^    let g:terminal_color_12 = '#076678'$/;"	v
+g:terminal_color_12	colors/gruvbox9_hard.vim	/^      let g:terminal_color_12 = '#83a598'$/;"	v
+g:terminal_color_12	colors/gruvbox9_hard.vim	/^    let g:terminal_color_12 = '#076678'$/;"	v
+g:terminal_color_12	colors/gruvbox9_soft.vim	/^      let g:terminal_color_12 = '#83a598'$/;"	v
+g:terminal_color_12	colors/gruvbox9_soft.vim	/^    let g:terminal_color_12 = '#076678'$/;"	v
+g:terminal_color_12	colors/neodark.vim	/^  let g:terminal_color_12 = s:light_blue[0]$/;"	v
+g:terminal_color_12	colors/solarized8.vim	/^      let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/solarized8.vim	/^    let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/solarized8.vim	/^  let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/solarized8_flat.vim	/^      let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/solarized8_flat.vim	/^    let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/solarized8_flat.vim	/^  let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/solarized8_high.vim	/^      let g:terminal_color_12='#93a1a1'$/;"	v
+g:terminal_color_12	colors/solarized8_high.vim	/^    let g:terminal_color_12='#657b83'$/;"	v
+g:terminal_color_12	colors/solarized8_high.vim	/^    let g:terminal_color_12='#93a1a1'$/;"	v
+g:terminal_color_12	colors/solarized8_high.vim	/^  let g:terminal_color_12='#657b83'$/;"	v
+g:terminal_color_12	colors/solarized8_low.vim	/^      let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/solarized8_low.vim	/^    let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/solarized8_low.vim	/^  let g:terminal_color_12='#839496'$/;"	v
+g:terminal_color_12	colors/space_vim_theme.vim	/^    let g:terminal_color_12 = '#4f97d7'$/;"	v
+g:terminal_color_12	colors/space_vim_theme.vim	/^  let g:terminal_color_12 = '#3a81c3'$/;"	v
+g:terminal_color_12	colors/srcery.vim	/^  let g:terminal_color_12 = s:bright_blue[0]$/;"	v
+g:terminal_color_13	colors/PaperColor.vim	/^  let g:terminal_color_13 = color13[0]$/;"	v
+g:terminal_color_13	colors/ayu.vim	/^  let g:terminal_color_13 = s:palette.constant[s:style]$/;"	v
+g:terminal_color_13	colors/dracula.vim	/^  let g:terminal_color_13 = '#FF92DF'$/;"	v
+g:terminal_color_13	colors/gruvbox.vim	/^  let g:terminal_color_13 = s:purple[0]$/;"	v
+g:terminal_color_13	colors/gruvbox9.vim	/^      let g:terminal_color_13 = '#d3869b'$/;"	v
+g:terminal_color_13	colors/gruvbox9.vim	/^    let g:terminal_color_13 = '#8f3f71'$/;"	v
+g:terminal_color_13	colors/gruvbox9_hard.vim	/^      let g:terminal_color_13 = '#d3869b'$/;"	v
+g:terminal_color_13	colors/gruvbox9_hard.vim	/^    let g:terminal_color_13 = '#8f3f71'$/;"	v
+g:terminal_color_13	colors/gruvbox9_soft.vim	/^      let g:terminal_color_13 = '#d3869b'$/;"	v
+g:terminal_color_13	colors/gruvbox9_soft.vim	/^    let g:terminal_color_13 = '#8f3f71'$/;"	v
+g:terminal_color_13	colors/neodark.vim	/^  let g:terminal_color_13 = s:base3[0]$/;"	v
+g:terminal_color_13	colors/solarized8.vim	/^      let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8.vim	/^    let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8.vim	/^  let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_flat.vim	/^      let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_flat.vim	/^    let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_flat.vim	/^  let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_high.vim	/^      let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_high.vim	/^    let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_high.vim	/^  let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_low.vim	/^      let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_low.vim	/^    let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/solarized8_low.vim	/^  let g:terminal_color_13='#6c71c4'$/;"	v
+g:terminal_color_13	colors/space_vim_theme.vim	/^    let g:terminal_color_13 = '#bc6ec5'$/;"	v
+g:terminal_color_13	colors/space_vim_theme.vim	/^  let g:terminal_color_13 = '#6c3163'$/;"	v
+g:terminal_color_13	colors/srcery.vim	/^  let g:terminal_color_13 = s:bright_magenta[0]$/;"	v
+g:terminal_color_14	colors/PaperColor.vim	/^  let g:terminal_color_14 = color14[0]$/;"	v
+g:terminal_color_14	colors/ayu.vim	/^  let g:terminal_color_14 = s:palette.regexp[s:style]$/;"	v
+g:terminal_color_14	colors/dracula.vim	/^  let g:terminal_color_14 = '#A4FFFF'$/;"	v
+g:terminal_color_14	colors/gruvbox.vim	/^  let g:terminal_color_14 = s:aqua[0]$/;"	v
+g:terminal_color_14	colors/gruvbox9.vim	/^      let g:terminal_color_14 = '#8ec07c'$/;"	v
+g:terminal_color_14	colors/gruvbox9.vim	/^    let g:terminal_color_14 = '#427b58'$/;"	v
+g:terminal_color_14	colors/gruvbox9_hard.vim	/^      let g:terminal_color_14 = '#8ec07c'$/;"	v
+g:terminal_color_14	colors/gruvbox9_hard.vim	/^    let g:terminal_color_14 = '#427b58'$/;"	v
+g:terminal_color_14	colors/gruvbox9_soft.vim	/^      let g:terminal_color_14 = '#8ec07c'$/;"	v
+g:terminal_color_14	colors/gruvbox9_soft.vim	/^    let g:terminal_color_14 = '#427b58'$/;"	v
+g:terminal_color_14	colors/neodark.vim	/^  let g:terminal_color_14 = s:brown[0]$/;"	v
+g:terminal_color_14	colors/solarized8.vim	/^      let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8.vim	/^    let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8.vim	/^  let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8_flat.vim	/^      let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8_flat.vim	/^    let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8_flat.vim	/^  let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8_high.vim	/^      let g:terminal_color_14='#eee8d5'$/;"	v
+g:terminal_color_14	colors/solarized8_high.vim	/^    let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8_high.vim	/^    let g:terminal_color_14='#eee8d5'$/;"	v
+g:terminal_color_14	colors/solarized8_high.vim	/^  let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8_low.vim	/^      let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8_low.vim	/^    let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/solarized8_low.vim	/^  let g:terminal_color_14='#93a1a1'$/;"	v
+g:terminal_color_14	colors/space_vim_theme.vim	/^    let g:terminal_color_14 = '#2d9574'$/;"	v
+g:terminal_color_14	colors/space_vim_theme.vim	/^  let g:terminal_color_14 = '#24775c'$/;"	v
+g:terminal_color_14	colors/srcery.vim	/^  let g:terminal_color_14 = s:bright_cyan[0]$/;"	v
+g:terminal_color_15	colors/PaperColor.vim	/^  let g:terminal_color_15 = color15[0]$/;"	v
+g:terminal_color_15	colors/ayu.vim	/^  let g:terminal_color_15 = s:palette.comment[s:style]$/;"	v
+g:terminal_color_15	colors/dracula.vim	/^  let g:terminal_color_15 = '#FFFFFF'$/;"	v
+g:terminal_color_15	colors/gruvbox.vim	/^  let g:terminal_color_15 = s:fg1[0]$/;"	v
+g:terminal_color_15	colors/gruvbox9.vim	/^      let g:terminal_color_15 = '#ebdbb2'$/;"	v
+g:terminal_color_15	colors/gruvbox9.vim	/^    let g:terminal_color_15 = '#3c3836'$/;"	v
+g:terminal_color_15	colors/gruvbox9_hard.vim	/^      let g:terminal_color_15 = '#ebdbb2'$/;"	v
+g:terminal_color_15	colors/gruvbox9_hard.vim	/^    let g:terminal_color_15 = '#3c3836'$/;"	v
+g:terminal_color_15	colors/gruvbox9_soft.vim	/^      let g:terminal_color_15 = '#ebdbb2'$/;"	v
+g:terminal_color_15	colors/gruvbox9_soft.vim	/^    let g:terminal_color_15 = '#3c3836'$/;"	v
+g:terminal_color_15	colors/neodark.vim	/^  let g:terminal_color_15 = s:base5[0]$/;"	v
+g:terminal_color_15	colors/solarized8.vim	/^      let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8.vim	/^    let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8.vim	/^  let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_flat.vim	/^      let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_flat.vim	/^    let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_flat.vim	/^  let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_high.vim	/^      let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_high.vim	/^    let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_high.vim	/^  let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_low.vim	/^      let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_low.vim	/^    let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/solarized8_low.vim	/^  let g:terminal_color_15='#fdf6e3'$/;"	v
+g:terminal_color_15	colors/space_vim_theme.vim	/^    let g:terminal_color_15 = '#b2b2b2'$/;"	v
+g:terminal_color_15	colors/space_vim_theme.vim	/^  let g:terminal_color_15 = '#655370'$/;"	v
+g:terminal_color_15	colors/srcery.vim	/^  let g:terminal_color_15 = s:bright_white[0]$/;"	v
+g:terminal_color_2	colors/PaperColor.vim	/^  let g:terminal_color_2  = color02[0]$/;"	v
+g:terminal_color_2	colors/ayu.vim	/^  let g:terminal_color_2 =  s:palette.string[s:style]$/;"	v
+g:terminal_color_2	colors/dracula.vim	/^  let g:terminal_color_2  = '#50FA7B'$/;"	v
+g:terminal_color_2	colors/gruvbox.vim	/^  let g:terminal_color_2 = s:gb.neutral_green[0]$/;"	v
+g:terminal_color_2	colors/gruvbox9.vim	/^      let g:terminal_color_2 = '#98971a'$/;"	v
+g:terminal_color_2	colors/gruvbox9.vim	/^    let g:terminal_color_2 = '#98971a'$/;"	v
+g:terminal_color_2	colors/gruvbox9_hard.vim	/^      let g:terminal_color_2 = '#98971a'$/;"	v
+g:terminal_color_2	colors/gruvbox9_hard.vim	/^    let g:terminal_color_2 = '#98971a'$/;"	v
+g:terminal_color_2	colors/gruvbox9_soft.vim	/^      let g:terminal_color_2 = '#98971a'$/;"	v
+g:terminal_color_2	colors/gruvbox9_soft.vim	/^    let g:terminal_color_2 = '#98971a'$/;"	v
+g:terminal_color_2	colors/neodark.vim	/^  let g:terminal_color_2  = s:green[0]$/;"	v
+g:terminal_color_2	colors/solarized8.vim	/^      let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8.vim	/^    let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8.vim	/^  let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_flat.vim	/^      let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_flat.vim	/^    let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_flat.vim	/^  let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_high.vim	/^      let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_high.vim	/^    let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_high.vim	/^  let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_low.vim	/^      let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_low.vim	/^    let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/solarized8_low.vim	/^  let g:terminal_color_2='#859900'$/;"	v
+g:terminal_color_2	colors/space_vim_theme.vim	/^    let g:terminal_color_2  = '#35a8a5'$/;"	v
+g:terminal_color_2	colors/space_vim_theme.vim	/^  let g:terminal_color_2  = '#35a8a5'$/;"	v
+g:terminal_color_2	colors/srcery.vim	/^  let g:terminal_color_2 = s:green[0]$/;"	v
+g:terminal_color_3	colors/PaperColor.vim	/^  let g:terminal_color_3  = color03[0]$/;"	v
+g:terminal_color_3	colors/ayu.vim	/^  let g:terminal_color_3 =  s:palette.accent[s:style]$/;"	v
+g:terminal_color_3	colors/dracula.vim	/^  let g:terminal_color_3  = '#F1FA8C'$/;"	v
+g:terminal_color_3	colors/gruvbox.vim	/^  let g:terminal_color_3 = s:gb.neutral_yellow[0]$/;"	v
+g:terminal_color_3	colors/gruvbox9.vim	/^      let g:terminal_color_3 = '#d79921'$/;"	v
+g:terminal_color_3	colors/gruvbox9.vim	/^    let g:terminal_color_3 = '#d79921'$/;"	v
+g:terminal_color_3	colors/gruvbox9_hard.vim	/^      let g:terminal_color_3 = '#d79921'$/;"	v
+g:terminal_color_3	colors/gruvbox9_hard.vim	/^    let g:terminal_color_3 = '#d79921'$/;"	v
+g:terminal_color_3	colors/gruvbox9_soft.vim	/^      let g:terminal_color_3 = '#d79921'$/;"	v
+g:terminal_color_3	colors/gruvbox9_soft.vim	/^    let g:terminal_color_3 = '#d79921'$/;"	v
+g:terminal_color_3	colors/neodark.vim	/^  let g:terminal_color_3  = s:yellow[0]$/;"	v
+g:terminal_color_3	colors/solarized8.vim	/^      let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8.vim	/^    let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8.vim	/^  let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_flat.vim	/^      let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_flat.vim	/^    let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_flat.vim	/^  let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_high.vim	/^      let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_high.vim	/^    let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_high.vim	/^  let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_low.vim	/^      let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_low.vim	/^    let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/solarized8_low.vim	/^  let g:terminal_color_3='#b58900'$/;"	v
+g:terminal_color_3	colors/space_vim_theme.vim	/^    let g:terminal_color_3  = '#b89f33'$/;"	v
+g:terminal_color_3	colors/space_vim_theme.vim	/^  let g:terminal_color_3  = '#b89f33'$/;"	v
+g:terminal_color_3	colors/srcery.vim	/^  let g:terminal_color_3 = s:yellow[0]$/;"	v
+g:terminal_color_4	colors/PaperColor.vim	/^  let g:terminal_color_4  = color04[0]$/;"	v
+g:terminal_color_4	colors/ayu.vim	/^  let g:terminal_color_4 =  s:palette.tag[s:style]$/;"	v
+g:terminal_color_4	colors/dracula.vim	/^  let g:terminal_color_4  = '#BD93F9'$/;"	v
+g:terminal_color_4	colors/gruvbox.vim	/^  let g:terminal_color_4 = s:gb.neutral_blue[0]$/;"	v
+g:terminal_color_4	colors/gruvbox9.vim	/^      let g:terminal_color_4 = '#458588'$/;"	v
+g:terminal_color_4	colors/gruvbox9.vim	/^    let g:terminal_color_4 = '#458588'$/;"	v
+g:terminal_color_4	colors/gruvbox9_hard.vim	/^      let g:terminal_color_4 = '#458588'$/;"	v
+g:terminal_color_4	colors/gruvbox9_hard.vim	/^    let g:terminal_color_4 = '#458588'$/;"	v
+g:terminal_color_4	colors/gruvbox9_soft.vim	/^      let g:terminal_color_4 = '#458588'$/;"	v
+g:terminal_color_4	colors/gruvbox9_soft.vim	/^    let g:terminal_color_4 = '#458588'$/;"	v
+g:terminal_color_4	colors/neodark.vim	/^  let g:terminal_color_4  = s:blue[0]$/;"	v
+g:terminal_color_4	colors/solarized8.vim	/^      let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8.vim	/^    let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8.vim	/^  let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_flat.vim	/^      let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_flat.vim	/^    let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_flat.vim	/^  let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_high.vim	/^      let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_high.vim	/^    let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_high.vim	/^  let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_low.vim	/^      let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_low.vim	/^    let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/solarized8_low.vim	/^  let g:terminal_color_4='#268bd2'$/;"	v
+g:terminal_color_4	colors/space_vim_theme.vim	/^    let g:terminal_color_4  = '#6981c5'$/;"	v
+g:terminal_color_4	colors/space_vim_theme.vim	/^  let g:terminal_color_4  = '#6981c5'$/;"	v
+g:terminal_color_4	colors/srcery.vim	/^  let g:terminal_color_4 = s:blue[0]$/;"	v
+g:terminal_color_5	colors/PaperColor.vim	/^  let g:terminal_color_5  = color05[0]$/;"	v
+g:terminal_color_5	colors/ayu.vim	/^  let g:terminal_color_5 =  s:palette.constant[s:style]$/;"	v
+g:terminal_color_5	colors/dracula.vim	/^  let g:terminal_color_5  = '#FF79C6'$/;"	v
+g:terminal_color_5	colors/gruvbox.vim	/^  let g:terminal_color_5 = s:gb.neutral_purple[0]$/;"	v
+g:terminal_color_5	colors/gruvbox9.vim	/^      let g:terminal_color_5 = '#b16286'$/;"	v
+g:terminal_color_5	colors/gruvbox9.vim	/^    let g:terminal_color_5 = '#b16286'$/;"	v
+g:terminal_color_5	colors/gruvbox9_hard.vim	/^      let g:terminal_color_5 = '#b16286'$/;"	v
+g:terminal_color_5	colors/gruvbox9_hard.vim	/^    let g:terminal_color_5 = '#b16286'$/;"	v
+g:terminal_color_5	colors/gruvbox9_soft.vim	/^      let g:terminal_color_5 = '#b16286'$/;"	v
+g:terminal_color_5	colors/gruvbox9_soft.vim	/^    let g:terminal_color_5 = '#b16286'$/;"	v
+g:terminal_color_5	colors/neodark.vim	/^  let g:terminal_color_5  = s:purple[0]$/;"	v
+g:terminal_color_5	colors/solarized8.vim	/^      let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8.vim	/^    let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8.vim	/^  let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_flat.vim	/^      let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_flat.vim	/^    let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_flat.vim	/^  let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_high.vim	/^      let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_high.vim	/^    let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_high.vim	/^  let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_low.vim	/^      let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_low.vim	/^    let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/solarized8_low.vim	/^  let g:terminal_color_5='#d33682'$/;"	v
+g:terminal_color_5	colors/space_vim_theme.vim	/^    let g:terminal_color_5  = '#a15ea7'$/;"	v
+g:terminal_color_5	colors/space_vim_theme.vim	/^  let g:terminal_color_5  = '#a15ea7'$/;"	v
+g:terminal_color_5	colors/srcery.vim	/^  let g:terminal_color_5 = s:magenta[0]$/;"	v
+g:terminal_color_6	colors/PaperColor.vim	/^  let g:terminal_color_6  = color06[0]$/;"	v
+g:terminal_color_6	colors/ayu.vim	/^  let g:terminal_color_6 =  s:palette.regexp[s:style]$/;"	v
+g:terminal_color_6	colors/dracula.vim	/^  let g:terminal_color_6  = '#8BE9FD'$/;"	v
+g:terminal_color_6	colors/gruvbox.vim	/^  let g:terminal_color_6 = s:gb.neutral_aqua[0]$/;"	v
+g:terminal_color_6	colors/gruvbox9.vim	/^      let g:terminal_color_6 = '#689d6a'$/;"	v
+g:terminal_color_6	colors/gruvbox9.vim	/^    let g:terminal_color_6 = '#689d6a'$/;"	v
+g:terminal_color_6	colors/gruvbox9_hard.vim	/^      let g:terminal_color_6 = '#689d6a'$/;"	v
+g:terminal_color_6	colors/gruvbox9_hard.vim	/^    let g:terminal_color_6 = '#689d6a'$/;"	v
+g:terminal_color_6	colors/gruvbox9_soft.vim	/^      let g:terminal_color_6 = '#689d6a'$/;"	v
+g:terminal_color_6	colors/gruvbox9_soft.vim	/^    let g:terminal_color_6 = '#689d6a'$/;"	v
+g:terminal_color_6	colors/neodark.vim	/^  let g:terminal_color_6  = s:orange[0]$/;"	v
+g:terminal_color_6	colors/solarized8.vim	/^      let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8.vim	/^    let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8.vim	/^  let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_flat.vim	/^      let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_flat.vim	/^    let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_flat.vim	/^  let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_high.vim	/^      let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_high.vim	/^    let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_high.vim	/^  let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_low.vim	/^      let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_low.vim	/^    let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/solarized8_low.vim	/^  let g:terminal_color_6='#2aa198'$/;"	v
+g:terminal_color_6	colors/space_vim_theme.vim	/^    let g:terminal_color_6  = '#288668'$/;"	v
+g:terminal_color_6	colors/space_vim_theme.vim	/^  let g:terminal_color_6  = '#288668'$/;"	v
+g:terminal_color_6	colors/srcery.vim	/^  let g:terminal_color_6 = s:cyan[0]$/;"	v
+g:terminal_color_7	colors/PaperColor.vim	/^  let g:terminal_color_7  = color07[0]$/;"	v
+g:terminal_color_7	colors/ayu.vim	/^  let g:terminal_color_7 =  "#FFFFFF"$/;"	v
+g:terminal_color_7	colors/dracula.vim	/^  let g:terminal_color_7  = '#F8F8F2'$/;"	v
+g:terminal_color_7	colors/gruvbox.vim	/^  let g:terminal_color_7 = s:fg4[0]$/;"	v
+g:terminal_color_7	colors/gruvbox9.vim	/^      let g:terminal_color_7 = '#a89984'$/;"	v
+g:terminal_color_7	colors/gruvbox9.vim	/^    let g:terminal_color_7 = '#7c6f64'$/;"	v
+g:terminal_color_7	colors/gruvbox9_hard.vim	/^      let g:terminal_color_7 = '#a89984'$/;"	v
+g:terminal_color_7	colors/gruvbox9_hard.vim	/^    let g:terminal_color_7 = '#7c6f64'$/;"	v
+g:terminal_color_7	colors/gruvbox9_soft.vim	/^      let g:terminal_color_7 = '#a89984'$/;"	v
+g:terminal_color_7	colors/gruvbox9_soft.vim	/^    let g:terminal_color_7 = '#7c6f64'$/;"	v
+g:terminal_color_7	colors/neodark.vim	/^  let g:terminal_color_7  = s:base4[0]$/;"	v
+g:terminal_color_7	colors/solarized8.vim	/^      let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8.vim	/^    let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8.vim	/^  let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8_flat.vim	/^      let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8_flat.vim	/^    let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8_flat.vim	/^  let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8_high.vim	/^      let g:terminal_color_7='#fdf6e3'$/;"	v
+g:terminal_color_7	colors/solarized8_high.vim	/^    let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8_high.vim	/^    let g:terminal_color_7='#fdf6e3'$/;"	v
+g:terminal_color_7	colors/solarized8_high.vim	/^  let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8_low.vim	/^      let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8_low.vim	/^    let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/solarized8_low.vim	/^  let g:terminal_color_7='#eee8d5'$/;"	v
+g:terminal_color_7	colors/space_vim_theme.vim	/^    let g:terminal_color_7  = '#5b5b5b'$/;"	v
+g:terminal_color_7	colors/space_vim_theme.vim	/^  let g:terminal_color_7  = '#463a4e'$/;"	v
+g:terminal_color_7	colors/srcery.vim	/^  let g:terminal_color_7 = s:white[0]$/;"	v
+g:terminal_color_8	colors/PaperColor.vim	/^  let g:terminal_color_8  = color08[0]$/;"	v
+g:terminal_color_8	colors/ayu.vim	/^  let g:terminal_color_8 =  s:palette.fg_idle[s:style]$/;"	v
+g:terminal_color_8	colors/dracula.vim	/^  let g:terminal_color_8  = '#6272A4'$/;"	v
+g:terminal_color_8	colors/gruvbox.vim	/^  let g:terminal_color_8 = s:gray[0]$/;"	v
+g:terminal_color_8	colors/gruvbox9.vim	/^      let g:terminal_color_8 = '#928374'$/;"	v
+g:terminal_color_8	colors/gruvbox9.vim	/^    let g:terminal_color_8 = '#928374'$/;"	v
+g:terminal_color_8	colors/gruvbox9_hard.vim	/^      let g:terminal_color_8 = '#928374'$/;"	v
+g:terminal_color_8	colors/gruvbox9_hard.vim	/^    let g:terminal_color_8 = '#928374'$/;"	v
+g:terminal_color_8	colors/gruvbox9_soft.vim	/^      let g:terminal_color_8 = '#928374'$/;"	v
+g:terminal_color_8	colors/gruvbox9_soft.vim	/^    let g:terminal_color_8 = '#928374'$/;"	v
+g:terminal_color_8	colors/neodark.vim	/^  let g:terminal_color_8  = s:base2[0]$/;"	v
+g:terminal_color_8	colors/solarized8.vim	/^      let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8.vim	/^    let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8.vim	/^  let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_flat.vim	/^      let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_flat.vim	/^    let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_flat.vim	/^  let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_high.vim	/^      let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_high.vim	/^    let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_high.vim	/^  let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_low.vim	/^      let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_low.vim	/^    let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/solarized8_low.vim	/^  let g:terminal_color_8='#002b36'$/;"	v
+g:terminal_color_8	colors/space_vim_theme.vim	/^    let g:terminal_color_8  = '#44505c'$/;"	v
+g:terminal_color_8	colors/space_vim_theme.vim	/^  let g:terminal_color_8  = '#a8a8bf'$/;"	v
+g:terminal_color_8	colors/srcery.vim	/^  let g:terminal_color_8 = s:bright_black[0]$/;"	v
+g:terminal_color_9	colors/PaperColor.vim	/^  let g:terminal_color_9  = color09[0]$/;"	v
+g:terminal_color_9	colors/ayu.vim	/^  let g:terminal_color_9 =  s:palette.error[s:style]$/;"	v
+g:terminal_color_9	colors/dracula.vim	/^  let g:terminal_color_9  = '#FF6E6E'$/;"	v
+g:terminal_color_9	colors/gruvbox.vim	/^  let g:terminal_color_9 = s:red[0]$/;"	v
+g:terminal_color_9	colors/gruvbox9.vim	/^      let g:terminal_color_9 = '#fb4934'$/;"	v
+g:terminal_color_9	colors/gruvbox9.vim	/^    let g:terminal_color_9 = '#9d0006'$/;"	v
+g:terminal_color_9	colors/gruvbox9_hard.vim	/^      let g:terminal_color_9 = '#fb4934'$/;"	v
+g:terminal_color_9	colors/gruvbox9_hard.vim	/^    let g:terminal_color_9 = '#9d0006'$/;"	v
+g:terminal_color_9	colors/gruvbox9_soft.vim	/^      let g:terminal_color_9 = '#fb4934'$/;"	v
+g:terminal_color_9	colors/gruvbox9_soft.vim	/^    let g:terminal_color_9 = '#9d0006'$/;"	v
+g:terminal_color_9	colors/neodark.vim	/^  let g:terminal_color_9  = s:pink[0]$/;"	v
+g:terminal_color_9	colors/solarized8.vim	/^      let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8.vim	/^    let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8.vim	/^  let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_flat.vim	/^      let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_flat.vim	/^    let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_flat.vim	/^  let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_high.vim	/^      let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_high.vim	/^    let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_high.vim	/^  let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_low.vim	/^      let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_low.vim	/^    let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/solarized8_low.vim	/^  let g:terminal_color_9='#cb4b16'$/;"	v
+g:terminal_color_9	colors/space_vim_theme.vim	/^    let g:terminal_color_9  = '#f2241f'$/;"	v
+g:terminal_color_9	colors/space_vim_theme.vim	/^  let g:terminal_color_9  = '#f2241f'$/;"	v
+g:terminal_color_9	colors/srcery.vim	/^  let g:terminal_color_9 = s:bright_red[0]$/;"	v
+g:terminal_color_background	colors/ayu.vim	/^  let g:terminal_color_background = g:terminal_color_0$/;"	v
+g:terminal_color_foreground	colors/ayu.vim	/^  let g:terminal_color_foreground = s:palette.fg[s:style]$/;"	v
+g:vimshell_escape_colors	colors/gruvbox.vim	/^let g:vimshell_escape_colors = [$/;"	v
+g:vimshell_escape_colors	colors/gruvbox9.vim	/^      let g:vimshell_escape_colors = [$/;"	v
+g:vimshell_escape_colors	colors/gruvbox9.vim	/^    let g:vimshell_escape_colors = [$/;"	v
+g:vimshell_escape_colors	colors/gruvbox9_hard.vim	/^      let g:vimshell_escape_colors = [$/;"	v
+g:vimshell_escape_colors	colors/gruvbox9_hard.vim	/^    let g:vimshell_escape_colors = [$/;"	v
+g:vimshell_escape_colors	colors/gruvbox9_soft.vim	/^      let g:vimshell_escape_colors = [$/;"	v
+g:vimshell_escape_colors	colors/gruvbox9_soft.vim	/^    let g:vimshell_escape_colors = [$/;"	v
+g:vimshell_escape_colors	colors/space_vim_theme.vim	/^    let g:vimshell_escape_colors = [$/;"	v
+g:vimshell_escape_colors	colors/space_vim_theme.vim	/^  let g:vimshell_escape_colors = [$/;"	v
+g:vista_default_executive	core/plugins/vista.vim	/^let g:vista_default_executive = 'ctags'$/;"	v
+g:vista_executive_for	core/plugins/vista.vim	/^let g:vista_executive_for = {$/;"	v
+g:vista_fzf_preview	core/plugins/vista.vim	/^let g:vista_fzf_preview = ['right:50%']$/;"	v
+g:which_key_localmap	core/plugins/whichkey.vim	/^let g:which_key_localmap ={$/;"	v
+g:which_key_lsbgmap	core/plugins/whichkey.vim	/^let g:which_key_lsbgmap = {$/;"	v
+g:which_key_map	core/plugins/whichkey.vim	/^let g:which_key_map =  {}$/;"	v
+g:which_key_map	core/plugins/whichkey.vim	/^let g:which_key_map = {$/;"	v
+g:which_key_map	core/plugins/whichkey.vim	/^let g:which_key_map[' '] = {$/;"	v
+g:which_key_rsbgmap	core/plugins/whichkey.vim	/^let g:which_key_rsbgmap = {$/;"	v
+g:yaml2json_method	autoload/etc/util.vim	/^		let g:yaml2json_method = etc#util#_find_yaml2json_method()$/;"	v
+g:yaml2json_method	autoload/etc/util.vim	/^let g:yaml2json_method = ''$/;"	v
+ga	core/plugins/allkey.vim	/^    nmap ga <Plug>(EasyAlign)$/;"	m
+ga	core/plugins/allkey.vim	/^    xmap ga <Plug>(EasyAlign)$/;"	m
+gc	core/plugins/allkey.vim	/^			nmap <buffer> gc <Plug>(caw:prefix)$/;"	m
+gc	core/plugins/allkey.vim	/^			xmap <buffer> gc <Plug>(caw:prefix)$/;"	m
+gcc	core/plugins/allkey.vim	/^			nmap <buffer> gcc <Plug>(caw:hatpos:toggle)$/;"	m
+gcc	core/plugins/allkey.vim	/^			xmap <buffer> gcc <Plug>(caw:hatpos:toggle)$/;"	m
+gd	core/plugins/allkey.vim	/^        nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gd	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> gd  defx#async_action('multi', ['drop', ['call', '<SID>git_diff/;"	m
+gf	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> gf  defx#do_action('call', '<SID>find_files')$/;"	m
+gi	core/plugins/allkey.vim	/^        nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gl	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> gl  defx#async_action('call', '<SID>explorer')$/;"	m
+gm	core/plugins/allkey.vim	/^        nmap gm <Plug>(coc-git-commit)$/;"	m
+gr	core/plugins/allkey.vim	/^        nmap <silent> gr <Plug>(coc-references)$/;"	m
+gr	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> gr  defx#do_action('call', '<SID>grep')$/;"	m
+gs	core/plugins/allkey.vim	/^        nmap gs <Plug>(coc-git-chunkinfo)$/;"	m
+gx	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> gx  defx#async_action('execute_system')$/;"	m
+gy	core/plugins/allkey.vim	/^        nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+h	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> h     defx#async_action('cd', ['..'])$/;"	m
+hlsearch	plugin/hlsearch.vim	/^augroup hlsearch$/;"	a
+hs_highlight_boolean	colors/solarized8.vim	/^      let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8.vim	/^    let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8.vim	/^  let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_flat.vim	/^      let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_flat.vim	/^    let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_flat.vim	/^  let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_high.vim	/^      let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_high.vim	/^    let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_high.vim	/^  let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_low.vim	/^      let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_low.vim	/^    let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	colors/solarized8_low.vim	/^  let hs_highlight_boolean=1$/;"	v
+hs_highlight_delimiters	colors/solarized8.vim	/^      let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8.vim	/^    let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8.vim	/^  let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_flat.vim	/^      let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_flat.vim	/^    let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_flat.vim	/^  let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_high.vim	/^      let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_high.vim	/^    let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_high.vim	/^  let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_low.vim	/^      let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_low.vim	/^    let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	colors/solarized8_low.vim	/^  let hs_highlight_delimiters=1$/;"	v
+ib	core/plugins/allkey.vim	/^	omap <silent> ib <Plug>(textobj-multiblock-i)$/;"	m
+ib	core/plugins/allkey.vim	/^	xmap <silent> ib <Plug>(textobj-multiblock-i)$/;"	m
+ib	core/plugins/allkey.vim	/^     omap ib <Plug>(textobj-sandwich-auto-i)$/;"	m
+ib	core/plugins/allkey.vim	/^     xmap ib <Plug>(textobj-sandwich-auto-i)$/;"	m
+is	core/plugins/allkey.vim	/^     omap is <Plug>(textobj-sandwich-query-i)$/;"	m
+is	core/plugins/allkey.vim	/^     xmap is <Plug>(textobj-sandwich-query-i)$/;"	m
+j	core/mappings.vim	/^nnoremap j gj$/;"	m
+j	core/mappings.vim	/^vnoremap j gj$/;"	m
+j	core/plugins/allkey.vim	/^	nmap <silent>j <Plug>(accelerated_jk_gj)$/;"	m
+k	core/mappings.vim	/^nnoremap k gk$/;"	m
+k	core/mappings.vim	/^vnoremap k gk$/;"	m
+k	core/plugins/allkey.vim	/^	nmap <silent>k <Plug>(accelerated_jk_gk)$/;"	m
+l	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> l     <SID>defx_toggle_tree()$/;"	m
+m	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr><nowait> m  defx#do_action('move')$/;"	m
+m	core/vimrc	/^	nnoremap m        <Nop>$/;"	m
+m	core/vimrc	/^	xnoremap m        <Nop>$/;"	m
+mg	core/plugins/allkey.vim	/^	nnoremap <silent> mg :Magit<CR>$/;"	m
+p	core/plugins/allkey.vim	/^	xmap p <Plug>(operator-replace)$/;"	m
+p	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr><nowait> p  defx#do_action('paste')$/;"	m
+plugin_difftools	plugin/difftools.vim	/^augroup plugin_difftools$/;"	a
+plugin_fastfold	plugin/nicefold.vim	/^augroup plugin_fastfold$/;"	a
+plugin_whitespace	plugin/whitespace.vim	/^	augroup plugin_whitespace$/;"	a
+q	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> q     defx#do_action('quit')$/;"	m
+q	plugin/difftools.vim	/^	nnoremap <buffer><silent> q :execute bufwinnr(b:diff_bnr) . 'q'<CR>$/;"	m
+q	plugin/difftools.vim	/^	nnoremap <buffer><silent> q :quit<CR>$/;"	m
+r	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> r     defx#do_action('rename')$/;"	m
+ruby_operators	colors/seoul256.vim	/^let ruby_operators = 1$/;"	v
+s:Background	colors/dracula.vim	/^function! s:Background()$/;"	f
+s:HL	colors/gruvbox.vim	/^function! s:HL(group, fg, ...)$/;"	f
+s:HL	colors/srcery.vim	/^function! s:HL(group, fg, ...)$/;"	f
+s:HSL2RGB	colors/neodark.vim	/^function! s:HSL2RGB(HSL)$/;"	f
+s:RGB2HSL	colors/neodark.vim	/^function! s:RGB2HSL(RGB)$/;"	f
+s:RGB2hex	colors/neodark.vim	/^function! s:RGB2hex(RGB)$/;"	f
+s:StartHL	plugin/hlsearch.vim	/^function! s:StartHL()$/;"	f
+s:StopHL	plugin/hlsearch.vim	/^function! s:StopHL()$/;"	f
+s:ToggleWhitespace	plugin/whitespace.vim	/^function! s:ToggleWhitespace(mode)$/;"	f
+s:WhitespaceErase	plugin/whitespace.vim	/^function! s:WhitespaceErase(line1, line2)$/;"	f
+s:acquire_theme_data	colors/PaperColor.vim	/^fun! s:acquire_theme_data()$/;"	f
+s:addbg	colors/monokai.vim	/^let s:addbg       = { "gui": "#5f875f", "cterm": "65" }$/;"	v
+s:addfg	colors/monokai.vim	/^let s:addfg       = { "gui": "#d7ffaf", "cterm": "193" }$/;"	v
+s:apply_syntax_highlightings	colors/PaperColor.vim	/^fun! s:apply_syntax_highlightings()$/;"	f
+s:aqua	colors/gruvbox.vim	/^  let s:aqua   = s:gb.bright_aqua$/;"	v
+s:aqua	colors/gruvbox.vim	/^  let s:aqua   = s:gb.faded_aqua$/;"	v
+s:aqua	colors/gruvbox.vim	/^  let s:aqua[1]   = 14$/;"	v
+s:aqua	colors/monokai.vim	/^let s:aqua        = { "gui": "#66d9ef", "cterm": "81" }$/;"	v
+s:attrs	colors/dracula.vim	/^let s:attrs = {$/;"	v
+s:b	colors/ayu.vim	/^let s:b      = ",bold"$/;"	v
+s:b	colors/hybrid_reverse.vim	/^let s:b      = ",bold"$/;"	v
+s:background	colors/seoul256.vim	/^let s:background  = &background$/;"	v
+s:backup	colors/seoul256-light.vim	/^      let s:backup = g:seoul256_background$/;"	v
+s:base1	colors/neodark.vim	/^  let s:base1 = ['#1F2F38', 236]$/;"	v
+s:base1	colors/neodark.vim	/^  let s:base1 = [bases[0], 236]$/;"	v
+s:base1	colors/neodark.vim	/^  let s:base1[0] = '#303030'$/;"	v
+s:base1	colors/neodark.vim	/^  let s:base1[1] = 'none' " This doesn't work well for airline$/;"	v
+s:base1	colors/neodark.vim	/^  let s:base1[1] = 0$/;"	v
+s:base2	colors/neodark.vim	/^  let s:base2 = ['#263A45', 237]$/;"	v
+s:base2	colors/neodark.vim	/^  let s:base2 = [bases[1], 237]$/;"	v
+s:base2	colors/neodark.vim	/^  let s:base2[0] = '#3a3a3a'$/;"	v
+s:base2	colors/neodark.vim	/^  let s:base2[1] = 8$/;"	v
+s:base3	colors/neodark.vim	/^  let s:base3 = ['#475C69', 59]$/;"	v
+s:base3	colors/neodark.vim	/^  let s:base3 = [bases[2], 59]$/;"	v
+s:base3	colors/neodark.vim	/^  let s:base3[0] = '#5f5f5f'$/;"	v
+s:base3	colors/neodark.vim	/^  let s:base3[1] = 13$/;"	v
+s:base4	colors/neodark.vim	/^  let s:base4 = ['#658595', 245]$/;"	v
+s:base4	colors/neodark.vim	/^  let s:base4 = [bases[3], 245]$/;"	v
+s:base4	colors/neodark.vim	/^  let s:base4[0] = '#8a8a8a'$/;"	v
+s:base4	colors/neodark.vim	/^  let s:base4[1] = 7$/;"	v
+s:base5	colors/neodark.vim	/^  let s:base5 = ['#AABBC4', 250]$/;"	v
+s:base5	colors/neodark.vim	/^  let s:base5 = [bases[4], 250]$/;"	v
+s:base5	colors/neodark.vim	/^  let s:base5[0] = '#bcbcbc'$/;"	v
+s:base5	colors/neodark.vim	/^  let s:base5[1] = 15$/;"	v
+s:beige	colors/neodark.vim	/^  let s:beige[0]      = '#d7af87'$/;"	v
+s:beige	colors/neodark.vim	/^  let s:beige[1]      = 11$/;"	v
+s:beige	colors/neodark.vim	/^let s:beige      = ['#C7C18B', 180]$/;"	v
+s:bg	colors/dracula.vim	/^let s:bg        = ['#282A36', 236]$/;"	v
+s:bg0	colors/gruvbox.vim	/^    let s:bg0  = s:gb.dark0_hard$/;"	v
+s:bg0	colors/gruvbox.vim	/^    let s:bg0  = s:gb.dark0_soft$/;"	v
+s:bg0	colors/gruvbox.vim	/^    let s:bg0  = s:gb.light0_hard$/;"	v
+s:bg0	colors/gruvbox.vim	/^    let s:bg0  = s:gb.light0_soft$/;"	v
+s:bg0	colors/gruvbox.vim	/^  let s:bg0  = s:gb.dark0$/;"	v
+s:bg0	colors/gruvbox.vim	/^  let s:bg0  = s:gb.light0$/;"	v
+s:bg0	colors/gruvbox.vim	/^  let s:bg0[1]    = 0$/;"	v
+s:bg1	colors/gruvbox.vim	/^  let s:bg1  = s:gb.dark1$/;"	v
+s:bg1	colors/gruvbox.vim	/^  let s:bg1  = s:gb.light1$/;"	v
+s:bg2	colors/gruvbox.vim	/^  let s:bg2  = s:gb.dark2$/;"	v
+s:bg2	colors/gruvbox.vim	/^  let s:bg2  = s:gb.light2$/;"	v
+s:bg3	colors/gruvbox.vim	/^  let s:bg3  = s:gb.dark3$/;"	v
+s:bg3	colors/gruvbox.vim	/^  let s:bg3  = s:gb.light3$/;"	v
+s:bg4	colors/gruvbox.vim	/^  let s:bg4  = s:gb.dark4$/;"	v
+s:bg4	colors/gruvbox.vim	/^  let s:bg4  = s:gb.light4$/;"	v
+s:bg_none	colors/ayu.vim	/^let s:bg_none = ' guibg=NONE ctermbg=NONE'$/;"	v
+s:bg_none	colors/hybrid_reverse.vim	/^let s:bg_none = ' guibg=NONE ctermbg=NONE'$/;"	v
+s:bg_normal	colors/hybrid_reverse.vim	/^  let s:bg_normal = s:bg_background$/;"	v
+s:bg_normal	colors/hybrid_reverse.vim	/^  let s:bg_normal = s:bg_none$/;"	v
+s:bgdark	colors/dracula.vim	/^let s:bgdark    = ['#21222C', 235]$/;"	v
+s:bgdarker	colors/dracula.vim	/^let s:bgdarker  = ['#191A21', 234]$/;"	v
+s:bglight	colors/dracula.vim	/^let s:bglight   = ['#343746', 237]$/;"	v
+s:bglighter	colors/dracula.vim	/^let s:bglighter = ['#424450', 238]$/;"	v
+s:black	colors/monokai.vim	/^let s:black       = { "gui": "#272822", "cterm": "234" }$/;"	v
+s:black	colors/srcery.vim	/^let s:black          = ['#1C1B19', 0]$/;"	v
+s:blue	colors/gruvbox.vim	/^  let s:blue   = s:gb.bright_blue$/;"	v
+s:blue	colors/gruvbox.vim	/^  let s:blue   = s:gb.faded_blue$/;"	v
+s:blue	colors/gruvbox.vim	/^  let s:blue[1]   = 12$/;"	v
+s:blue	colors/neodark.vim	/^  let s:blue[0]       = '#5fafd7'$/;"	v
+s:blue	colors/neodark.vim	/^  let s:blue[1]       = 4$/;"	v
+s:blue	colors/neodark.vim	/^let s:blue       = ['#639EE4', 74]$/;"	v
+s:blue	colors/srcery.vim	/^let s:blue           = ['#2C78BF', 4]$/;"	v
+s:bold	colors/gruvbox.vim	/^  let s:bold = ''$/;"	v
+s:bold	colors/gruvbox.vim	/^let s:bold = 'bold,'$/;"	v
+s:bold	colors/srcery.vim	/^  let s:bold = ''$/;"	v
+s:bold	colors/srcery.vim	/^let s:bold = 'bold,'$/;"	v
+s:bright_black	colors/srcery.vim	/^let s:bright_black   = ['#2D2C29', 8]$/;"	v
+s:bright_blue	colors/srcery.vim	/^let s:bright_blue    = ['#68A8E4', 12]$/;"	v
+s:bright_cyan	colors/srcery.vim	/^let s:bright_cyan    = ['#53FDE9', 14]$/;"	v
+s:bright_green	colors/srcery.vim	/^let s:bright_green   = ['#98BC37', 10]$/;"	v
+s:bright_magenta	colors/srcery.vim	/^let s:bright_magenta = ['#FF5C8F', 13]$/;"	v
+s:bright_orange	colors/srcery.vim	/^let s:bright_orange = ['#FF8700', 208]$/;"	v
+s:bright_red	colors/srcery.vim	/^let s:bright_red     = ['#F75341', 9]$/;"	v
+s:bright_white	colors/srcery.vim	/^let s:bright_white   = ['#FCE8C3', 15]$/;"	v
+s:bright_yellow	colors/srcery.vim	/^let s:bright_yellow  = ['#FED06E', 11]$/;"	v
+s:brown	colors/neodark.vim	/^  let s:brown[0]      = '#af8787'$/;"	v
+s:brown	colors/neodark.vim	/^  let s:brown[1]      = 14$/;"	v
+s:brown	colors/neodark.vim	/^let s:brown      = ['#AE8785', 138]$/;"	v
+s:build_prim	colors/ayu.vim	/^function! s:build_prim(hi_elem, field)$/;"	f
+s:build_prim	colors/hybrid_reverse.vim	/^function! s:build_prim(hi_elem, field)$/;"	f
+s:c	colors/ayu.vim	/^let s:c      = ",undercurl"$/;"	v
+s:c	colors/hybrid_reverse.vim	/^let s:c      = ",undercurl"$/;"	v
+s:center	core/plugins/startify.vim	/^function! s:center(lines) abort$/;"	f
+s:changebg	colors/monokai.vim	/^let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }$/;"	v
+s:changefg	colors/monokai.vim	/^let s:changefg    = { "gui": "#d7d7ff", "cterm": "189" }$/;"	v
+s:check_custom_settings	autoload/etc.vim	/^function! s:check_custom_settings(filename)abort$/;"	f
+s:check_custom_settings	core/vimrc	/^function! s:check_custom_settings(filename)abort$/;"	f
+s:close_diff	plugin/difftools.vim	/^function! s:close_diff()$/;"	f
+s:code_actions	core/plugins/allkey.vim	/^    let s:code_actions = []$/;"	v
+s:color_column	colors/gruvbox.vim	/^  let s:color_column = get(s:gb, g:gruvbox_color_column)$/;"	v
+s:color_column	colors/gruvbox.vim	/^let s:color_column = s:bg1$/;"	v
+s:colors_name	colors/seoul256.vim	/^let s:colors_name = get(g:, 'colors_name', '')$/;"	v
+s:colour	colors/PaperColor.vim	/^  fun! s:colour(r, g, b)$/;"	f
+s:comment	colors/dracula.vim	/^let s:comment   = ['#6272A4',  61]$/;"	v
+s:convert_colors	colors/PaperColor.vim	/^fun! s:convert_colors()$/;"	f
+s:create_color_variables	colors/PaperColor.vim	/^    fun! s:create_color_variables(color_name, rich_color, term_color)$/;"	f
+s:cterm_aqua	colors/hybrid_reverse.vim	/^  let s:cterm_aqua       = "109"$/;"	v
+s:cterm_aqua	colors/hybrid_reverse.vim	/^  let s:cterm_aqua       = "14"  " LightCyan$/;"	v
+s:cterm_blue	colors/hybrid_reverse.vim	/^  let s:cterm_blue       = "110"$/;"	v
+s:cterm_blue	colors/hybrid_reverse.vim	/^  let s:cterm_blue       = "12"  " LightBlue$/;"	v
+s:cterm_comment	colors/hybrid_reverse.vim	/^  let s:cterm_comment    = "243"$/;"	v
+s:cterm_comment	colors/hybrid_reverse.vim	/^  let s:cterm_comment    = "7"   " LightGrey$/;"	v
+s:cterm_delbg	colors/hybrid_reverse.vim	/^  let s:cterm_delbg      = "167"$/;"	v
+s:cterm_delbg	colors/hybrid_reverse.vim	/^  let s:cterm_delbg      = "9"   " LightRed$/;"	v
+s:cterm_foreground	colors/hybrid_reverse.vim	/^  let s:cterm_foreground = "15"  " White$/;"	v
+s:cterm_foreground	colors/hybrid_reverse.vim	/^  let s:cterm_foreground = "250"$/;"	v
+s:cterm_green	colors/hybrid_reverse.vim	/^  let s:cterm_green      = "10"  " LightGreen$/;"	v
+s:cterm_green	colors/hybrid_reverse.vim	/^  let s:cterm_green      = "143"$/;"	v
+s:cterm_line	colors/hybrid_reverse.vim	/^  let s:cterm_line       = "0"   " Black$/;"	v
+s:cterm_line	colors/hybrid_reverse.vim	/^  let s:cterm_line       = "235"$/;"	v
+s:cterm_orange	colors/hybrid_reverse.vim	/^  let s:cterm_orange     = "173"$/;"	v
+s:cterm_orange	colors/hybrid_reverse.vim	/^  let s:cterm_orange     = "3"   " DarkYellow$/;"	v
+s:cterm_purple	colors/hybrid_reverse.vim	/^  let s:cterm_purple     = "13"  " LightMagenta$/;"	v
+s:cterm_purple	colors/hybrid_reverse.vim	/^  let s:cterm_purple     = "139"$/;"	v
+s:cterm_red	colors/hybrid_reverse.vim	/^  let s:cterm_red        = "167"$/;"	v
+s:cterm_red	colors/hybrid_reverse.vim	/^  let s:cterm_red        = "9"   " LightRed$/;"	v
+s:cterm_selection	colors/hybrid_reverse.vim	/^  let s:cterm_selection  = "237"$/;"	v
+s:cterm_selection	colors/hybrid_reverse.vim	/^  let s:cterm_selection  = "8"   " DarkGrey$/;"	v
+s:cterm_yellow	colors/hybrid_reverse.vim	/^  let s:cterm_yellow     = "11"  " LightYellow$/;"	v
+s:cterm_yellow	colors/hybrid_reverse.vim	/^  let s:cterm_yellow     = "221"$/;"	v
+s:custom_bg	colors/seoul256-light.vim	/^let s:custom_bg = get(g:, 'seoul256_light_background', get(g:, 'seoul256_background', 253))$/;"	v
+s:cyan	colors/dracula.vim	/^let s:cyan      = ['#8BE9FD', 117]$/;"	v
+s:cyan	colors/srcery.vim	/^let s:cyan           = ['#0AAEB3', 6]$/;"	v
+s:dark_bg	colors/seoul256.vim	/^  let s:dark_bg  = 237$/;"	v
+s:dark_bg	colors/seoul256.vim	/^  let s:dark_bg  = get(s:, 'seoul256_background', 237)$/;"	v
+s:dark_bg_2	colors/seoul256.vim	/^let s:dark_bg_2 = s:dark_bg > 233 ? s:dark_bg - 2 : 16$/;"	v
+s:dark_fg	colors/seoul256.vim	/^let s:dark_fg = 252$/;"	v
+s:darkblack	colors/monokai.vim	/^let s:darkblack   = { "gui": "#211F1C", "cterm": "233" }$/;"	v
+s:darkgrey	colors/monokai.vim	/^let s:darkgrey    = { "gui": "#64645e", "cterm": "239" }$/;"	v
+s:darkred	colors/monokai.vim	/^let s:darkred     = { "gui": "#5f0000", "cterm": "52" }$/;"	v
+s:defx_close_tab	core/plugins/defx.vim	/^function! s:defx_close_tab(tabnr)$/;"	f
+s:defx_mappings	core/plugins/defx.vim	/^function! s:defx_mappings() abort$/;"	f
+s:defx_refresh_cwd	core/plugins/defx.vim	/^function! s:defx_refresh_cwd(event)$/;"	f
+s:defx_toggle_tree	core/plugins/defx.vim	/^function! s:defx_toggle_tree() abort$/;"	f
+s:delbg	colors/monokai.vim	/^let s:delbg       = { "gui": "#f75f5f", "cterm": "167" }$/;"	v
+s:edit_file	core/plugins/fzf.vim	/^  function! s:edit_file(item)$/;"	f
+s:explorer	core/plugins/defx.vim	/^function! s:explorer(context) abort$/;"	f
+s:fg	colors/dracula.vim	/^let s:fg        = ['#F8F8F2', 255]$/;"	v
+s:fg0	colors/gruvbox.vim	/^  let s:fg0 = s:gb.dark0$/;"	v
+s:fg0	colors/gruvbox.vim	/^  let s:fg0 = s:gb.light0$/;"	v
+s:fg1	colors/gruvbox.vim	/^  let s:fg1 = s:gb.dark1$/;"	v
+s:fg1	colors/gruvbox.vim	/^  let s:fg1 = s:gb.light1$/;"	v
+s:fg1	colors/gruvbox.vim	/^  let s:fg1[1]    = 15$/;"	v
+s:fg2	colors/gruvbox.vim	/^  let s:fg2 = s:gb.dark2$/;"	v
+s:fg2	colors/gruvbox.vim	/^  let s:fg2 = s:gb.light2$/;"	v
+s:fg3	colors/gruvbox.vim	/^  let s:fg3 = s:gb.dark3$/;"	v
+s:fg3	colors/gruvbox.vim	/^  let s:fg3 = s:gb.light3$/;"	v
+s:fg4	colors/gruvbox.vim	/^  let s:fg4 = s:gb.dark4$/;"	v
+s:fg4	colors/gruvbox.vim	/^  let s:fg4 = s:gb.light4$/;"	v
+s:fg4	colors/gruvbox.vim	/^  let s:fg4[1]    = 7$/;"	v
+s:fg4_256	colors/gruvbox.vim	/^  let s:fg4_256 = s:gb.dark4_256$/;"	v
+s:fg4_256	colors/gruvbox.vim	/^  let s:fg4_256 = s:gb.light4_256$/;"	v
+s:fg_bold	colors/hybrid_reverse.vim	/^    let s:fg_bold = s:fmt_bold$/;"	v
+s:fg_bold	colors/hybrid_reverse.vim	/^    let s:fg_bold = s:fmt_none$/;"	v
+s:fg_italic	colors/hybrid_reverse.vim	/^    let s:fg_italic = s:fmt_ital$/;"	v
+s:fg_italic	colors/hybrid_reverse.vim	/^    let s:fg_italic = s:fmt_none$/;"	v
+s:fg_none	colors/ayu.vim	/^let s:fg_none = ' guifg=NONE ctermfg=NONE'$/;"	v
+s:fg_none	colors/hybrid_reverse.vim	/^let s:fg_none = ' guifg=NONE ctermfg=NONE'$/;"	v
+s:files	core/plugins/fzf.vim	/^  function! s:files()$/;"	f
+s:find_file_explorer	core/plugins/defx.vim	/^function! s:find_file_explorer() abort$/;"	f
+s:find_files	core/plugins/defx.vim	/^function! s:find_files(context) abort$/;"	f
+s:footer	core/plugins/startify.vim	/^let s:footer = [$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb = {}$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.aqua   = s:aqua$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg0 = s:bg0$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg1 = s:bg1$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg2 = s:bg2$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg3 = s:bg3$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bg4 = s:bg4$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.blue   = s:blue$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_aqua    = ['#8ec07c', 108]     " 142-192-124$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_blue    = ['#83a598', 109]     " 131-165-152$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_green   = ['#b8bb26', 142]     " 184-187-38$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_orange  = ['#fe8019', 208]     " 254-128-25$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_purple  = ['#d3869b', 175]     " 211-134-155$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_red     = ['#fb4934', 167]     " 251-73-52$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.bright_yellow  = ['#fabd2f', 214]     " 250-189-47$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark0       = ['#282828', 235]     " 40-40-40$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark0_hard  = ['#1d2021', 234]     " 29-32-33$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark0_soft  = ['#32302f', 236]     " 50-48-47$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark1       = ['#3c3836', 237]     " 60-56-54$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark2       = ['#504945', 239]     " 80-73-69$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark3       = ['#665c54', 241]     " 102-92-84$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark4       = ['#7c6f64', 243]     " 124-111-100$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.dark4_256   = ['#7c6f64', 243]     " 124-111-100$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_aqua     = ['#427b58', 66]      " 66-123-88$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_blue     = ['#076678', 24]      " 7-102-120$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_green    = ['#79740e', 100]     " 121-116-14$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_purple   = ['#8f3f71', 96]      " 143-63-113$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_red      = ['#9d0006', 88]      " 157-0-6$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.faded_yellow   = ['#b57614', 136]     " 181-118-20$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg0 = s:fg0$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg1 = s:fg1$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg2 = s:fg2$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg3 = s:fg3$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg4 = s:fg4$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.fg4_256 = s:fg4_256$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.gray = s:gray$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.gray_244    = ['#928374', 244]     " 146-131-116$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.gray_245    = ['#928374', 245]     " 146-131-116$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.green  = s:green$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light0      = ['#fbf1c7', 229]     " 253-244-193$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light0_hard = ['#f9f5d7', 230]     " 249-245-215$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light0_soft = ['#f2e5bc', 228]     " 242-229-188$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light1      = ['#ebdbb2', 223]     " 235-219-178$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light2      = ['#d5c4a1', 250]     " 213-196-161$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light3      = ['#bdae93', 248]     " 189-174-147$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light4      = ['#a89984', 246]     " 168-153-132$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.light4_256  = ['#a89984', 246]     " 168-153-132$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_aqua   = ['#689d6a', 72]      " 104-157-106$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_blue   = ['#458588', 66]      " 69-133-136$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_green  = ['#98971a', 106]     " 152-151-26$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_orange = ['#d65d0e', 166]     " 214-93-14$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_purple = ['#b16286', 132]     " 177-98-134$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_red    = ['#cc241d', 124]     " 204-36-29$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.neutral_yellow = ['#d79921', 172]     " 215-153-33$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.orange = s:orange$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.purple = s:purple$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.red    = s:red$/;"	v
+s:gb	colors/gruvbox.vim	/^let s:gb.yellow = s:yellow$/;"	v
+s:generate_base_colors	colors/neodark.vim	/^function! s:generate_base_colors(base1)$/;"	f
+s:generate_language_option_variables	colors/PaperColor.vim	/^fun! s:generate_language_option_variables()$/;"	f
+s:generate_theme_option_variables	colors/PaperColor.vim	/^fun! s:generate_theme_option_variables()$/;"	f
+s:git_diff	core/plugins/defx.vim	/^function! s:git_diff(context) abort$/;"	f
+s:goyo_enter	core/plugins/goyo.vim	/^function! s:goyo_enter()$/;"	f
+s:goyo_leave	core/plugins/goyo.vim	/^function! s:goyo_leave()$/;"	f
+s:gray	colors/gruvbox.vim	/^  let s:gray = s:gb.gray_244$/;"	v
+s:gray	colors/gruvbox.vim	/^  let s:gray = s:gb.gray_245$/;"	v
+s:gray	colors/gruvbox.vim	/^  let s:gray[1]   = 8$/;"	v
+s:green	colors/dracula.vim	/^let s:green     = ['#50FA7B',  84]$/;"	v
+s:green	colors/gruvbox.vim	/^  let s:green  = s:gb.bright_green$/;"	v
+s:green	colors/gruvbox.vim	/^  let s:green  = s:gb.faded_green$/;"	v
+s:green	colors/gruvbox.vim	/^  let s:green[1]  = 10$/;"	v
+s:green	colors/monokai.vim	/^let s:green       = { "gui": "#A6E22D", "cterm": "148" }$/;"	v
+s:green	colors/neodark.vim	/^  let s:green[0]      = '#87af87'$/;"	v
+s:green	colors/neodark.vim	/^  let s:green[1]      = 2$/;"	v
+s:green	colors/neodark.vim	/^let s:green      = ['#84B97C', 108]$/;"	v
+s:green	colors/srcery.vim	/^let s:green          = ['#519F50', 2]$/;"	v
+s:grep	core/plugins/defx.vim	/^function! s:grep(context) abort$/;"	f
+s:grey	colors/monokai.vim	/^let s:grey        = { "gui": "#8F908A", "cterm": "243" }$/;"	v
+s:grey_colour	colors/PaperColor.vim	/^  fun! s:grey_colour(n)$/;"	f
+s:grey_level	colors/PaperColor.vim	/^  fun! s:grey_level(n)$/;"	f
+s:grey_number	colors/PaperColor.vim	/^  fun! s:grey_number(x)$/;"	f
+s:gui	colors/seoul256.vim	/^let s:gui = has('gui_running')$/;"	v
+s:gui_background	colors/hybrid_reverse.vim	/^let s:gui_background = "#1d1f21"$/;"	v
+s:gui_comment	colors/hybrid_reverse.vim	/^let s:gui_comment    = "#707880"$/;"	v
+s:gui_line	colors/hybrid_reverse.vim	/^let s:gui_line       = "#282a2e"$/;"	v
+s:gui_selection	colors/hybrid_reverse.vim	/^let s:gui_selection  = "#373b41"$/;"	v
+s:h	colors/dracula.vim	/^function! s:h(scope, fg, ...) " bg, attr_list, special$/;"	f
+s:h	colors/monokai.vim	/^function! s:h(group, style)$/;"	f
+s:hard_black	colors/srcery.vim	/^let s:hard_black    = ['#121212', 233]$/;"	v
+s:header	core/plugins/startify.vim	/^let s:header = [$/;"	v
+s:hex2RGB	colors/neodark.vim	/^function! s:hex2RGB(hex)$/;"	f
+s:hi	colors/neodark.vim	/^function! s:hi(group, fg, bg, attr)$/;"	f
+s:hi	colors/seoul256.vim	/^function! s:hi(item, fg, bg)$/;"	f
+s:hls_cursor	colors/gruvbox.vim	/^  let s:hls_cursor = get(s:gb, g:gruvbox_hls_cursor)$/;"	v
+s:hls_cursor	colors/gruvbox.vim	/^let s:hls_cursor = s:orange$/;"	v
+s:i	colors/ayu.vim	/^let s:i      = ",italic"$/;"	v
+s:i	colors/hybrid_reverse.vim	/^let s:i      = ",italic"$/;"	v
+s:identify_color_mode	colors/PaperColor.vim	/^fun! s:identify_color_mode()$/;"	f
+s:inverse	colors/gruvbox.vim	/^  let s:inverse = ''$/;"	v
+s:inverse	colors/gruvbox.vim	/^let s:inverse = 'inverse,'$/;"	v
+s:inverse	colors/srcery.vim	/^  let s:inverse = ''$/;"	v
+s:inverse	colors/srcery.vim	/^let s:inverse = 'inverse,'$/;"	v
+s:invert_selection	colors/gruvbox.vim	/^    let s:invert_selection = ''$/;"	v
+s:invert_selection	colors/gruvbox.vim	/^let s:invert_selection = s:inverse$/;"	v
+s:invert_signs	colors/gruvbox.vim	/^    let s:invert_signs = s:inverse$/;"	v
+s:invert_signs	colors/gruvbox.vim	/^let s:invert_signs = ''$/;"	v
+s:invert_tabline	colors/gruvbox.vim	/^    let s:invert_tabline = s:inverse$/;"	v
+s:invert_tabline	colors/gruvbox.vim	/^let s:invert_tabline = ''$/;"	v
+s:is_dark	colors/gruvbox.vim	/^let s:is_dark=(&background == 'dark')$/;"	v
+s:italic	colors/gruvbox.vim	/^  let s:italic = ''$/;"	v
+s:italic	colors/gruvbox.vim	/^let s:italic = 'italic,'$/;"	v
+s:italic	colors/srcery.vim	/^  let s:italic = ''$/;"	v
+s:italic	colors/srcery.vim	/^let s:italic = 'italic,'$/;"	v
+s:italicize_comments	colors/gruvbox.vim	/^    let s:italicize_comments = ''$/;"	v
+s:italicize_comments	colors/gruvbox.vim	/^let s:italicize_comments = s:italic$/;"	v
+s:italicize_strings	colors/gruvbox.vim	/^    let s:italicize_strings = s:italic$/;"	v
+s:italicize_strings	colors/gruvbox.vim	/^let s:italicize_strings = ''$/;"	v
+s:italics	colors/gruvbox9.vim	/^let s:italics = (((&t_ZH != '' && &t_ZH != '[7m') || has('gui_running')) && !has('iOS')) || has/;"	v
+s:italics	colors/gruvbox9.vim	/^let s:italics = s:italics && get(g:, 'gruvbox_italics', 1)$/;"	v
+s:italics	colors/gruvbox9_hard.vim	/^let s:italics = (((&t_ZH != '' && &t_ZH != '[7m') || has('gui_running')) && !has('iOS')) || has/;"	v
+s:italics	colors/gruvbox9_hard.vim	/^let s:italics = s:italics && get(g:, 'gruvbox_italics', 1)$/;"	v
+s:italics	colors/gruvbox9_soft.vim	/^let s:italics = (((&t_ZH != '' && &t_ZH != '[7m') || has('gui_running')) && !has('iOS')) || has/;"	v
+s:italics	colors/gruvbox9_soft.vim	/^let s:italics = s:italics && get(g:, 'gruvbox_italics', 1)$/;"	v
+s:jump_dirty	core/plugins/defx.vim	/^function! s:jump_dirty(dir) abort$/;"	f
+s:light	colors/seoul256-light.vim	/^let s:light     = s:custom_bg >= 252 && s:custom_bg <= 256$/;"	v
+s:light_bg	colors/seoul256.vim	/^  let s:light_bg = 253$/;"	v
+s:light_bg	colors/seoul256.vim	/^  let s:light_bg = get(s:, 'seoul256_background', 253)$/;"	v
+s:light_bg_1	colors/seoul256.vim	/^let s:light_bg_1 = min([s:light_bg + 1, 256])$/;"	v
+s:light_bg_2	colors/seoul256.vim	/^let s:light_bg_2 = min([s:light_bg + 2, 256])$/;"	v
+s:light_blue	colors/neodark.vim	/^  let s:light_blue[0] = '#5fd7d7'$/;"	v
+s:light_blue	colors/neodark.vim	/^  let s:light_blue[1] = 12$/;"	v
+s:light_blue	colors/neodark.vim	/^let s:light_blue = ['#72C7D1', 80]$/;"	v
+s:light_fg	colors/seoul256.vim	/^let s:light_fg = 239$/;"	v
+s:light_var_found	colors/seoul256-light.vim	/^let s:light_var_found = exists('g:seoul256_light_background')$/;"	v
+s:lightblack	colors/monokai.vim	/^let s:lightblack  = { "gui": "#2D2E27", "cterm": "235" }$/;"	v
+s:lightblack2	colors/monokai.vim	/^let s:lightblack2 = { "gui": "#383a3e", "cterm": "236" }$/;"	v
+s:lightgrey	colors/monokai.vim	/^let s:lightgrey   = { "gui": "#575b61", "cterm": "237" }$/;"	v
+s:load_256_to_GUI_converter	colors/PaperColor.vim	/^fun! s:load_256_to_GUI_converter()$/;"	f
+s:load_GUI_to_256_converter	colors/PaperColor.vim	/^fun! s:load_GUI_to_256_converter()$/;"	f
+s:magenta	colors/srcery.vim	/^let s:magenta        = ['#E02C6D', 5]$/;"	v
+s:master	colors/seoul256-light.vim	/^let s:master    = expand('<sfile>:p:h').'\/seoul256.vim'$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus = {}$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.config = { 'description': '🔧 Zsh Tmux Configuration' }$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.config.file_candidates = [$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.dein = { 'description': '⚔️  Plugin management' }$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.dein.command_candidates = [$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.files = { 'description': '📁 File tools' }$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.files.command_candidates = [$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.project = { 'description': '🛠  Project & Structure' }$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.project.command_candidates = [$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.thinkvim = {'description': '💎 ThinkVim Configuration files'}$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.thinkvim.file_candidates = [$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.tools = { 'description': '⚙️  Dev Tools' }$/;"	v
+s:menus	core/plugins/denite_menu.vim	/^let s:menus.tools.command_candidates = [$/;"	v
+s:my_denite_decls	core/plugins/allkey.vim	/^        function! s:my_denite_decls(filetype) abort$/;"	f
+s:my_denite_file_rec_goroot	core/plugins/allkey.vim	/^        function! s:my_denite_file_rec_goroot() abort$/;"	f
+s:my_denite_outline	core/plugins/allkey.vim	/^        function! s:my_denite_outline(filetype) abort$/;"	f
+s:n	colors/ayu.vim	/^let s:n      = "NONE"$/;"	v
+s:n	colors/hybrid_reverse.vim	/^let s:n      = "NONE"$/;"	v
+s:none	colors/ayu.vim	/^let s:none   = "NONE"$/;"	v
+s:none	colors/dracula.vim	/^let s:none      = ['NONE', 'NONE']$/;"	v
+s:none	colors/gruvbox.vim	/^let s:none = ['NONE', 'NONE']$/;"	v
+s:none	colors/hybrid_reverse.vim	/^let s:none   = "NONE"$/;"	v
+s:none	colors/srcery.vim	/^let s:none = ['NONE', 'NONE']$/;"	v
+s:normal_bg	colors/hybrid_reverse.vim	/^  let s:normal_bg = s:bg_none$/;"	v
+s:normal_bg	colors/hybrid_reverse.vim	/^let s:normal_bg = s:bg_normal$/;"	v
+s:number_column	colors/gruvbox.vim	/^  let s:number_column = get(s:gb, g:gruvbox_number_column)$/;"	v
+s:number_column	colors/gruvbox.vim	/^let s:number_column = s:none$/;"	v
+s:open_diff	plugin/difftools.vim	/^function! s:open_diff()$/;"	f
+s:orange	colors/dracula.vim	/^let s:orange    = ['#FFB86C', 215]$/;"	v
+s:orange	colors/gruvbox.vim	/^  let s:orange = s:gb.bright_orange$/;"	v
+s:orange	colors/gruvbox.vim	/^  let s:orange = s:gb.faded_orange$/;"	v
+s:orange	colors/monokai.vim	/^let s:orange      = { "gui": "#FD9720", "cterm": "208" }$/;"	v
+s:orange	colors/neodark.vim	/^  let s:orange[0]     = '#d7875f'$/;"	v
+s:orange	colors/neodark.vim	/^  let s:orange[1]     = 6$/;"	v
+s:orange	colors/neodark.vim	/^let s:orange     = ['#E18254', 173]$/;"	v
+s:orange	colors/srcery.vim	/^let s:orange        = ['#FF5F00', 202]$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette = {}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.accent    = {'dark': "#F29718",  'light': "#FF6A00",  'mirage': "#FFCC66"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.bg        = {'dark': "#0F1419",  'light': "#FAFAFA",  'mirage': "#212733"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.comment   = {'dark': "#5C6773",  'light': "#ABB0B6",  'mirage': "#5C6773"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.constant  = {'dark': "#FFEE99",  'light': "#A37ACC",  'mirage': "#D4BFFF"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.error     = {'dark': "#FF3333",  'light': "#FF3333",  'mirage': "#FF3333"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.fg        = {'dark': "#E6E1CF",  'light': "#5C6773",  'mirage': "#D9D7CE"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.fg_idle   = {'dark': "#3E4B59",  'light': "#828C99",  'mirage': "#607080"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.function  = {'dark': "#FFB454",  'light': "#F29718",  'mirage': "#FFD57F"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.guide     = {'dark': "#2D3640",  'light': "#D9D8D7",  'mirage': "#3D4751"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.keyword   = {'dark': "#FF7733",  'light': "#FF7733",  'mirage': "#FFAE57"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.line      = {'dark': "#151A1E",  'light': "#F3F3F3",  'mirage': "#242B38"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.markup    = {'dark': "#F07178",  'light': "#F07178",  'mirage': "#F07178"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.operator  = {'dark': "#E7C547",  'light': "#E7C547",  'mirage': "#80D4FF"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.panel     = {'dark': "#14191F",  'light': "#FFFFFF",  'mirage': "#272D38"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.regexp    = {'dark': "#95E6CB",  'light': "#4CBF99",  'mirage': "#95E6CB"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.selection = {'dark': "#253340",  'light': "#F0EEE4",  'mirage': "#343F4C"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.special   = {'dark': "#E6B673",  'light': "#E6B673",  'mirage': "#FFC44C"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.string    = {'dark': "#B8CC52",  'light': "#86B300",  'mirage': "#BBE67E"}$/;"	v
+s:palette	colors/ayu.vim	/^let s:palette.tag       = {'dark': "#36A3D9",  'light': "#36A3D9",  'mirage': "#5CCFE6"}$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette = {'gui' : {} , 'cterm' : {}}$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.addbg      = { 'dark' : "65"               , 'light' : "194" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.addfg      = { 'dark' : "193"              , 'light' : "22"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.aqua       = { 'dark' : s:cterm_aqua       , 'light' : "23"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.background = { 'dark' : "234"              , 'light' : "254" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.blue       = { 'dark' : s:cterm_blue       , 'light' : "17"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.changebg   = { 'dark' : "60"               , 'light' : "189" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.changefg   = { 'dark' : "189"              , 'light' : "53"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.comment    = { 'dark' : s:cterm_comment    , 'light' : "59"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.darkblue   = { 'dark' : "17"               , 'light' : "194" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.darkcolumn = { 'dark' : "234"              , 'light' : "244" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.darkcyan   = { 'dark' : "24"               , 'light' : "22"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.darkpurple = { 'dark' : "53"               , 'light' : "53"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.darkred    = { 'dark' : "52"               , 'light' : "189" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.delbg      = { 'dark' : s:cterm_delbg      , 'light' : "224" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.foreground = { 'dark' : s:cterm_foreground , 'light' : "16"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.green      = { 'dark' : s:cterm_green      , 'light' : "22"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.line       = { 'dark' : s:cterm_line       , 'light' : "252" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.orange     = { 'dark' : s:cterm_orange     , 'light' : "94"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.purple     = { 'dark' : s:cterm_purple     , 'light' : "53"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.red        = { 'dark' : s:cterm_red        , 'light' : "52"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.selection  = { 'dark' : s:cterm_selection  , 'light' : "250" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.window     = { 'dark' : "236"              , 'light' : "247" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.cterm.yellow     = { 'dark' : s:cterm_yellow     , 'light' : "58"  }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.addbg      = { 'dark' : "#5F875F"        , 'light' : "#d7ffd7" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.addfg      = { 'dark' : "#d7ffaf"        , 'light' : "#005f00" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.aqua       = { 'dark' : "#8abeb7"        , 'light' : "#005f5f" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.background = { 'dark' : s:gui_background , 'light' : "#e4e4e4" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.blue       = { 'dark' : "#81a2be"        , 'light' : "#00005f" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.changebg   = { 'dark' : "#5F5F87"        , 'light' : "#d7d7ff" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.changefg   = { 'dark' : "#d7d7ff"        , 'light' : "#5f005f" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.comment    = { 'dark' : s:gui_comment    , 'light' : "#5f5f5f" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.darkblue   = { 'dark' : "#00005f"        , 'light' : "#d7ffd7" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.darkcolumn = { 'dark' : "#1c1c1c"        , 'light' : "#808080" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.darkcyan   = { 'dark' : "#005f5f"        , 'light' : "#005f00" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.darkpurple = { 'dark' : "#5f005f"        , 'light' : "#5f005f" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.darkred    = { 'dark' : "#5f0000"        , 'light' : "#d7d7ff" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.delbg      = { 'dark' : "#cc6666"        , 'light' : "#ffd7d7" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.foreground = { 'dark' : "#c5c8c6"        , 'light' : "#000000" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.green      = { 'dark' : "#b5bd68"        , 'light' : "#005f00" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.line       = { 'dark' : s:gui_line       , 'light' : "#d0d0d0" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.orange     = { 'dark' : "#de935f"        , 'light' : "#875f00" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.purple     = { 'dark' : "#b294bb"        , 'light' : "#5f005f" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.red        = { 'dark' : "#cc6666"        , 'light' : "#5f0000" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.selection  = { 'dark' : s:gui_selection  , 'light' : "#bcbcbc" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.window     = { 'dark' : "#303030"        , 'light' : "#9e9e9e" }$/;"	v
+s:palette	colors/hybrid_reverse.vim	/^let s:palette.gui.yellow     = { 'dark' : "#f0c674"        , 'light' : "#5f5f00" }$/;"	v
+s:pink	colors/dracula.vim	/^let s:pink      = ['#FF79C6', 212]$/;"	v
+s:pink	colors/monokai.vim	/^let s:pink        = { "gui": "#F92772", "cterm": "197" }$/;"	v
+s:pink	colors/neodark.vim	/^  let s:pink[0]       = '#d7afaf'$/;"	v
+s:pink	colors/neodark.vim	/^  let s:pink[1]       = 9$/;"	v
+s:pink	colors/neodark.vim	/^let s:pink       = ['#E69CA0', 181]$/;"	v
+s:prepend_icon	core/plugins/fzf.vim	/^  function! s:prepend_icon(candidates)$/;"	f
+s:purple	colors/dracula.vim	/^let s:purple    = ['#BD93F9', 141]$/;"	v
+s:purple	colors/gruvbox.vim	/^  let s:purple = s:gb.bright_purple$/;"	v
+s:purple	colors/gruvbox.vim	/^  let s:purple = s:gb.faded_purple$/;"	v
+s:purple	colors/gruvbox.vim	/^  let s:purple[1] = 13$/;"	v
+s:purple	colors/monokai.vim	/^let s:purple      = { "gui": "#ae81ff", "cterm": "141" }$/;"	v
+s:purple	colors/neodark.vim	/^  let s:purple[0]     = '#af87d7'$/;"	v
+s:purple	colors/neodark.vim	/^  let s:purple[1]     = 5$/;"	v
+s:purple	colors/neodark.vim	/^let s:purple     = ['#B888E2', 140]$/;"	v
+s:r	colors/ayu.vim	/^let s:r      = ",reverse"$/;"	v
+s:r	colors/hybrid_reverse.vim	/^let s:r      = ",reverse"$/;"	v
+s:red	colors/dracula.vim	/^let s:red       = ['#FF5555', 203]$/;"	v
+s:red	colors/gruvbox.vim	/^  let s:red    = s:gb.bright_red$/;"	v
+s:red	colors/gruvbox.vim	/^  let s:red    = s:gb.faded_red$/;"	v
+s:red	colors/gruvbox.vim	/^  let s:red[1]    = 9$/;"	v
+s:red	colors/monokai.vim	/^let s:red         = { "gui": "#e73c50", "cterm": "196" }$/;"	v
+s:red	colors/neodark.vim	/^  let s:red[0]        = '#d75f87'$/;"	v
+s:red	colors/neodark.vim	/^  let s:red[1]        = 1$/;"	v
+s:red	colors/neodark.vim	/^let s:red        = ['#DC657D', 168]$/;"	v
+s:red	colors/srcery.vim	/^let s:red            = ['#EF2F27', 1]$/;"	v
+s:register_default_theme	colors/PaperColor.vim	/^fun! s:register_default_theme()$/;"	f
+s:rgb_colour	colors/PaperColor.vim	/^  fun! s:rgb_colour(x, y, z)$/;"	f
+s:rgb_level	colors/PaperColor.vim	/^  fun! s:rgb_level(n)$/;"	f
+s:rgb_map	colors/seoul256.vim	/^        let s:rgb_map =$/;"	v
+s:rgb_number	colors/PaperColor.vim	/^  fun! s:rgb_number(x)$/;"	f
+s:s	colors/ayu.vim	/^let s:s      = ",standout"$/;"	v
+s:s	colors/hybrid_reverse.vim	/^let s:s      = ",standout"$/;"	v
+s:save_cpo	plugin/hlsearch.vim	/^let s:save_cpo = &cpoptions$/;"	v
+s:selection	colors/dracula.vim	/^let s:selection = ['#44475A', 239]$/;"	v
+s:seoul256_background	colors/seoul256.vim	/^  let s:seoul256_background = g:seoul256_background$/;"	v
+s:set_color_variables	colors/PaperColor.vim	/^fun! s:set_color_variables()$/;"	f
+s:set_format_attributes	colors/PaperColor.vim	/^fun! s:set_format_attributes()$/;"	f
+s:set_overriding_colors	colors/PaperColor.vim	/^fun! s:set_overriding_colors()$/;"	f
+s:show_documentation	core/plugins/allkey.vim	/^        function! s:show_documentation()$/;"	f
+s:sign_column	colors/gruvbox.vim	/^    let s:sign_column = get(s:gb, g:gruvbox_sign_column)$/;"	v
+s:sign_column	colors/gruvbox.vim	/^  let s:sign_column = s:number_column$/;"	v
+s:sign_column	colors/gruvbox.vim	/^let s:sign_column = s:bg1$/;"	v
+s:source_custom	core/vimrc	/^function! s:source_custom(path, ...) abort$/;"	f
+s:style	colors/ayu.vim	/^let s:style = get(g:, 'ayucolor', 'dark')$/;"	v
+s:style	colors/hybrid_reverse.vim	/^let s:style = &background$/;"	v
+s:style	colors/seoul256.vim	/^    let s:style = &background$/;"	v
+s:style	colors/seoul256.vim	/^    let s:style = 'dark'$/;"	v
+s:style	colors/seoul256.vim	/^    let s:style = 'light'$/;"	v
+s:style_idx	colors/seoul256.vim	/^let s:style_idx = s:style == 'light'$/;"	v
+s:subtle	colors/dracula.vim	/^let s:subtle    = ['#424450', 238]$/;"	v
+s:t_Co	colors/gruvbox9.vim	/^let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2$/;"	v
+s:t_Co	colors/gruvbox9_hard.vim	/^let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2$/;"	v
+s:t_Co	colors/gruvbox9_soft.vim	/^let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 2$/;"	v
+s:t_none	colors/ayu.vim	/^let s:t_none = "NONE"$/;"	v
+s:t_none	colors/hybrid_reverse.vim	/^let s:t_none = "NONE"$/;"	v
+s:teal	colors/neodark.vim	/^  let s:teal[0]       = '#5fafaf'$/;"	v
+s:teal	colors/neodark.vim	/^  let s:teal[1]       = 10$/;"	v
+s:teal	colors/neodark.vim	/^let s:teal       = ['#4BB1A7', 73]$/;"	v
+s:theme_autoload	autoload/theme.vim	/^function! s:theme_autoload() abort$/;"	f
+s:theme_cache_file	autoload/theme.vim	/^function! s:theme_cache_file() abort$/;"	f
+s:theme_cached_scheme	autoload/theme.vim	/^function! s:theme_cached_scheme(default) abort$/;"	f
+s:theme_cleanup	autoload/theme.vim	/^function! s:theme_cleanup() abort$/;"	f
+s:theme_has_hint	colors/PaperColor.vim	/^fun! s:theme_has_hint(hint)$/;"	f
+s:themes	colors/PaperColor.vim	/^let s:themes = {}$/;"	v
+s:to_256	colors/PaperColor.vim	/^  fun! s:to_256(rgb)$/;"	f
+s:toggle	plugin/hlsearch.vim	/^function! s:toggle(old, new)$/;"	f
+s:toggle_width	core/plugins/defx.vim	/^function! s:toggle_width(context) abort$/;"	f
+s:u	colors/ayu.vim	/^let s:u      = ",underline"$/;"	v
+s:u	colors/hybrid_reverse.vim	/^let s:u      = ",underline"$/;"	v
+s:undercurl	colors/gruvbox.vim	/^  let s:undercurl = ''$/;"	v
+s:undercurl	colors/gruvbox.vim	/^let s:undercurl = 'undercurl,'$/;"	v
+s:undercurl	colors/srcery.vim	/^  let s:undercurl = ''$/;"	v
+s:undercurl	colors/srcery.vim	/^let s:undercurl = 'undercurl,'$/;"	v
+s:underline	colors/gruvbox.vim	/^  let s:underline = ''$/;"	v
+s:underline	colors/gruvbox.vim	/^let s:underline = 'underline,'$/;"	v
+s:underline	colors/srcery.vim	/^  let s:underline = ''$/;"	v
+s:underline	colors/srcery.vim	/^let s:underline = 'underline,'$/;"	v
+s:user_settings_path	core/vimrc	/^let s:user_settings_path = expand('~\/.thinkvim.d\/local_settings.vim')$/;"	v
+s:var_found	colors/seoul256-light.vim	/^let s:var_found = exists('g:seoul256_background')$/;"	v
+s:version	colors/PaperColor.vim	/^let s:version = '0.9.x'$/;"	v
+s:vert_split	colors/gruvbox.vim	/^  let s:vert_split = get(s:gb, g:gruvbox_vert_split)$/;"	v
+s:vert_split	colors/gruvbox.vim	/^let s:vert_split = s:bg0$/;"	v
+s:vim_bg	colors/gruvbox.vim	/^let s:vim_bg = ['bg', 'bg']$/;"	v
+s:vim_fg	colors/gruvbox.vim	/^let s:vim_fg = ['fg', 'fg']$/;"	v
+s:warmgrey	colors/monokai.vim	/^let s:warmgrey    = { "gui": "#75715E", "cterm": "59" }$/;"	v
+s:white	colors/monokai.vim	/^let s:white       = { "gui": "#E8E8E3", "cterm": "252" }$/;"	v
+s:white	colors/srcery.vim	/^let s:white          = ['#918175', 7]$/;"	v
+s:xgray1	colors/srcery.vim	/^let s:xgray1        = ['#262626', 235]$/;"	v
+s:xgray2	colors/srcery.vim	/^let s:xgray2        = ['#303030', 236]$/;"	v
+s:xgray3	colors/srcery.vim	/^let s:xgray3        = ['#3A3A3A', 237]$/;"	v
+s:xgray4	colors/srcery.vim	/^let s:xgray4        = ['#444444', 238]$/;"	v
+s:xgray5	colors/srcery.vim	/^let s:xgray5        = ['#4E4E4E', 239]$/;"	v
+s:yellow	colors/dracula.vim	/^let s:yellow    = ['#F1FA8C', 228]$/;"	v
+s:yellow	colors/gruvbox.vim	/^  let s:yellow = s:gb.bright_yellow$/;"	v
+s:yellow	colors/gruvbox.vim	/^  let s:yellow = s:gb.faded_yellow$/;"	v
+s:yellow	colors/gruvbox.vim	/^  let s:yellow[1] = 11$/;"	v
+s:yellow	colors/monokai.vim	/^let s:yellow      = { "gui": "#E6DB74", "cterm": "186" }$/;"	v
+s:yellow	colors/neodark.vim	/^  let s:yellow[0]     = '#d7af5f'$/;"	v
+s:yellow	colors/neodark.vim	/^  let s:yellow[1]     = 3$/;"	v
+s:yellow	colors/neodark.vim	/^let s:yellow     = ['#D4B261', 179]$/;"	v
+s:yellow	colors/srcery.vim	/^let s:yellow         = ['#FBB829', 3]$/;"	v
+sa	core/plugins/allkey.vim	/^     nmap <silent> sa <Plug>(operator-sandwich-add)$/;"	m
+sa	core/plugins/allkey.vim	/^     omap <silent> sa <Plug>(operator-sandwich-g@)$/;"	m
+sa	core/plugins/allkey.vim	/^     xmap <silent> sa <Plug>(operator-sandwich-add)$/;"	m
+sd	core/plugins/allkey.vim	/^     nmap <silent> sd <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Pl/;"	m
+sd	core/plugins/allkey.vim	/^     xmap <silent> sd <Plug>(operator-sandwich-delete)$/;"	m
+sdb	core/plugins/allkey.vim	/^     nmap <silent> sdb <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<P/;"	m
+sg	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> sg    defx#do_action('multi', [['drop', 'vsplit'], 'quit'])$/;"	m
+sj	core/plugins/allkey.vim	/^        nmap sj :SplitjoinJoin<CR>$/;"	m
+sk	core/plugins/allkey.vim	/^        nmap sk :SplitjoinSplit<CR>$/;"	m
+sr	core/plugins/allkey.vim	/^     nmap <silent> sr <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<P/;"	m
+sr	core/plugins/allkey.vim	/^     xmap <silent> sr <Plug>(operator-sandwich-replace)$/;"	m
+srb	core/plugins/allkey.vim	/^     nmap <silent> srb <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)</;"	m
+st	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> st    defx#do_action('multi', [['drop', 'tabnew'], 'quit'])$/;"	m
+sv	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> sv    defx#do_action('multi', [['drop', 'split'], 'quit'])$/;"	m
+theme#init	autoload/theme.vim	/^function! theme#init() abort$/;"	f
+user_plugin_defx	core/plugins/defx.vim	/^augroup user_plugin_defx$/;"	a
+v	core/plugins/allkey.vim	/^        xmap v <Plug>(expand_region_expand)$/;"	m
+w	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> w   defx#async_action('call', '<SID>toggle_width')$/;"	m
+x	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> x     defx#do_action('execute_system')$/;"	m
+yy	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> yy    defx#do_action('yank_path')$/;"	m
+zL	core/plugins/allkey.vim	/^        noremap zL :<C-u>call <SID>my_denite_decls(&filetype)<CR>$/;"	m
+zT	core/plugins/allkey.vim	/^        noremap zT :<C-u>call <SID>my_denite_file_rec_goroot()<CR>$/;"	m
+zl	core/plugins/allkey.vim	/^        noremap zl :<C-u>call <SID>my_denite_outline(&filetype)<CR>$/;"	m
+zz	core/mappings.vim	/^nnoremap <expr> zz (winline() == (winheight(0)+1) \/ 2) ?$/;"	m
+{{	core/plugins/allkey.vim	/^	nmap <buffer> {{ [%$/;"	m
+}}	core/plugins/allkey.vim	/^	nmap <buffer> }} ]%$/;"	m
+~	core/plugins/defx.vim	/^	nnoremap <silent><buffer><expr> ~     defx#async_action('cd')$/;"	m
+二次元赛高	README-CN.md	/^## 二次元赛高$/;"	s
+安装	README-CN.md	/^## 安装$/;"	s
+必要工具	README-CN.md	/^### 必要工具$/;"	S
+必要环境	README-CN.md	/^## 必要环境$/;"	s
+教程	README-CN.md	/^## 教程$/;"	s
+特性	README-CN.md	/^## 特性$/;"	s
+结构	README-CN.md	/^## 结构$/;"	s
+鸣谢	README-CN.md	/^## 鸣谢$/;"	s
