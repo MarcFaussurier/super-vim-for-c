@@ -19,7 +19,7 @@ somehow destroy my installation.
 
 - Your NEOVIM will use your VIM (everything you need for C one again)
 
-- ThinkVIM will install on NVIM 
+- ThinkVIM will install on NVIM, also 
 autocompletion features are removed in favor of TheVimIDE ThinkVIM is mostly 
 here for NVIM colors both in files and terminal.
 
