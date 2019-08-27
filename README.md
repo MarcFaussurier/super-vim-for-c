@@ -1,6 +1,6 @@
-##mfaussur super vim for C!##
+## mfaussur super vim for C!
 
-#This is a merge/fork of 3 repos#
+# This is a merge/fork of 3 repos
 
 This is a merge of TheVimIDE (https://github.com/Shadowsith/TheVimIDE),
 ThinkVIM (https://github.com/hardcoreplayers/ThinkVim), and Vim-42Header
@@ -8,7 +8,7 @@ ThinkVIM (https://github.com/hardcoreplayers/ThinkVim), and Vim-42Header
 
 -----
 
-#Introduction#
+# Introduction
 
 The goal of this repo is allow myself to quickly rollback if I accidentally 
 somehow destroy my installation. 
@@ -26,7 +26,7 @@ here for NVIM colors both in files and terminal.
 - *I SUGGEST YOU TO INSTALL VimR FOR AWESOME EXPERIENCE* 
 http://vimr.org
 
-#Features#
+# Features
 
 - Awesome colors, tagbars and such visuals, enjoy even colors in NVIM :terminal
 [ThinkVIM] 
